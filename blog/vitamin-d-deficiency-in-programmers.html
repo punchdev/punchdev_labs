@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitamin D Deficiency in Programmers: Symptoms & Solutions</title>
+    <meta name="description" content="Indoor developers are vitamin D deficient. Symptoms: fatigue, brain fog, weak immunity. Solution: 5000 IU daily supplementation.">
+    <meta name="keywords" content="vitamin D deficiency symptoms, programmers, developers, fatigue, brain fog">
+    <meta name="author" content="punchDev">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://punchdev.com/blog/vitamin-d-deficiency-in-programmers.html">
+    <meta property="og:title" content="Vitamin D Deficiency in Programmers: Symptoms & Solutions">
+    <meta property="og:description" content="Indoor developers are vitamin D deficient. Symptoms: fatigue, brain fog, weak immunity. Solution: 5000 IU daily supplementation.">
+    <meta property="og:image" content="https://punchdev.com/og-vitamin-d.png">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Vitamin D Deficiency in Programmers: Symptoms & Solutions",
+        "description": "Indoor developers are vitamin D deficient. Symptoms: fatigue, brain fog, weak immunity. Solution: 5000 IU daily supplementation.",
+        "image": "https://punchdev.com/og-vitamin-d.png",
+        "datePublished": "2025-01-24",
+        "dateModified": "2025-01-24",
+        "author": {
+            "@type": "Organization",
+            "name": "punchDev",
+            "url": "https://punchdev.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "punchDev",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://punchdev.com/logo.png"
+            }
+        },
+        "mainEntity": {
+            "@type": "MedicalCondition",
+            "name": "Vitamin D Deficiency",
+            "description": "A common condition in indoor workers, especially programmers"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://punchdev.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://punchdev.com/blog"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Vitamin D Deficiency in Programmers",
+                "item": "https://punchdev.com/blog/vitamin-d-deficiency-in-programmers.html"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Tailwind CSS CDN with custom punch color palette -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                colors: {
+                    'punch-bg': '#020617',
+                    'punch-card': '#0f172a',
+                    'punch-border': '#1e293b',
+                    'punch-primary': '#6366f1',
+                    'punch-accent': '#d946ef',
+                    'punch-success': '#34d399'
+                },
+                extend: {
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'scanline': 'scanline 8s linear infinite'
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' }
+                        },
+                        scanline: {
+                            '0%': { transform: 'translateY(-100%)' },
+                            '100%': { transform: 'translateY(100%)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        code, pre {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        body {
+            background-color: #020617;
+            color: #e2e8f0;
+        }
+
+        a {
+            color: #6366f1;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #d946ef;
+        }
+
+        .scanline-effect {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .scanline-effect::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(217, 70, 239, 0.5), transparent);
+            animation: scanline 8s linear infinite;
+            pointer-events: none;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #e2e8f0;
+        }
+
+        h2 {
+            font-size: 1.875rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #6366f1;
+            border-bottom: 2px solid #1e293b;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #d946ef;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            color: #cbd5e1;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .cta-box {
+            background-color: #0f172a;
+            border: 2px solid #6366f1;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #6366f1;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.25rem;
+            transition: background-color 0.2s;
+            margin-top: 1rem;
+        }
+
+        .cta-button:hover {
+            background-color: #d946ef;
+        }
+
+        .article-meta {
+            color: #94a3b8;
+            font-size: 0.875rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .highlight {
+            background-color: rgba(99, 102, 241, 0.1);
+            padding: 0.25rem 0.5rem;
+            border-left: 3px solid #6366f1;
+            display: block;
+            margin: 1.5rem 0;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body class="scanline-effect">
+    <div class="article-container">
+        <!-- Article Header -->
+        <div class="article-meta">
+            <p>Published: January 24, 2025 | Reading time: 8 minutes</p>
+        </div>
+
+        <h1>Vitamin D Deficiency in Programmers: Symptoms & Solutions</h1>
+
+        <!-- Introduction -->
+        <section>
+            <p>If you're a programmer spending 8+ hours daily inside your office or home, your vitamin D levels are likely critically low. Studies show that 40-70% of indoor office workers are vitamin D deficient, with software developers among the highest-risk populations. This isn't a minor nutritional gap—vitamin D deficiency directly impacts your energy, cognition, and immune function. Understanding <span style="color: #d946ef;">vitamin D deficiency symptoms</span> is the first step toward fixing what's making you crash at 3 PM and struggle through afternoon standups.</p>
+        </section>
+
+        <!-- Why Programmers Are At Risk -->
+        <h2>Why Programmers Are At Risk</h2>
+        <section>
+            <p>The programmer's lifestyle is a perfect storm for vitamin D deficiency. Your work traps you indoors, away from the primary source of vitamin D: sunlight. Unlike outdoor workers, landscapers, or construction crews who receive incidental sun exposure, developers spend their days staring at screens in climate-controlled buildings.</p>
+
+            <h3>No Sunlight Exposure</h3>
+            <p>Vitamin D synthesis in your skin requires UVB radiation between 290-315 nanometers. This only occurs when the sun is high enough in the sky (roughly 10 AM to 3 PM), and it's completely blocked by window glass, sunscreen, and clothing. For a programmer, this means:</p>
+            <ul>
+                <li>Windows between office and desk don't provide adequate UVB exposure</li>
+                <li>Commuting before dawn and leaving after sunset eliminates incidental exposure</li>
+                <li>Winter months reduce UVB intensity by 90% in northern latitudes</li>
+                <li>Your skin can't manufacture vitamin D on cloudy days</li>
+            </ul>
+
+            <h3>Desk-Bound Sedentary Lifestyle</h3>
+            <p>Even if you work outdoors occasionally, the sedentary nature of programming compounds the problem. Your body's circadian rhythm depends on bright light exposure, and your mental health depends on movement. Vitamin D deficiency is strongly correlated with sedentary behavior—not because sitting causes deficiency, but because people who sit all day rarely get the sun exposure needed for vitamin D synthesis.</p>
+
+            <h3>Seasonal Affective Disorder Risk</h3>
+            <p>Programmers are overrepresented in northern latitudes (Seattle, Toronto, Berlin, Stockholm). During winter months (October through March), UVB radiation is either absent or insufficient for vitamin D synthesis. This creates a perfect storm: limited sunlight + indoor work + winter season = severe vitamin D deficiency and seasonal affective disorder (SAD).</p>
+        </section>
+
+        <!-- Symptoms of Deficiency -->
+        <h2>Symptoms of Vitamin D Deficiency</h2>
+        <section>
+            <p>Vitamin D deficiency doesn't announce itself with sharp pain or obvious illness. Instead, it creeps up as fatigue, brain fog, and a vague sense that something's wrong. Many programmers attribute these symptoms to their job, burnout, or diet—when the real culprit is a nutritional deficiency.</p>
+
+            <h3>Fatigue and Energy Crashes</h3>
+            <p>The 3 PM crash is real, and vitamin D deficiency accelerates it. Vitamin D regulates melatonin and serotonin production. When deficient, your circadian rhythm becomes dysregulated, and you experience afternoon energy collapses that no amount of caffeine fully resolves. You feel tired despite sleeping 8 hours. Your energy is inconsistent—good some days, terrible others. Your body struggles to maintain alertness during long coding sessions.</p>
+
+            <h3>Brain Fog and Cognitive Decline</h3>
+            <p>Vitamin D receptors are expressed throughout your prefrontal cortex and hippocampus (attention and memory centers). Deficiency directly impairs:</p>
+            <ul>
+                <li>Sustained focus during complex problem-solving</li>
+                <li>Working memory (holding multiple variables in mind)</li>
+                <li>Decision-making speed and accuracy</li>
+                <li>Creativity and lateral thinking in debugging</li>
+                <li>Your ability to parse and understand new code</li>
+            </ul>
+            <p>You experience brain fog most acutely in the afternoon and on cloudy days. Morning focus is better, but gradually deteriorates. This pattern is classic vitamin D deficiency.</p>
+
+            <h3>Weakened Immunity</h3>
+            <p>Vitamin D is critical for innate immune function. Deficiency increases susceptibility to respiratory infections, which is why programmers in winter often cycle through colds, flu, and lingering respiratory issues. You might notice:</p>
+            <ul>
+                <li>Catching every cold that circulates your team</li>
+                <li>Infections lasting 2-3 weeks instead of 1 week</li>
+                <li>Lingering chest congestion or cough</li>
+                <li>More frequent ear infections or sinus issues</li>
+            </ul>
+
+            <h3>Mood Issues and Depression</h3>
+            <p>Vitamin D regulates dopamine and serotonin, the neurotransmitters that control mood. Deficiency creates a feedback loop: low mood reduces motivation to go outside, which further lowers vitamin D, worsening mood. You experience:</p>
+            <ul>
+                <li>Persistent low mood despite having "good" projects</li>
+                <li>Difficulty finding enjoyment in coding or hobbies</li>
+                <li>Increased irritability with teammates and during code reviews</li>
+                <li>Worse symptoms in winter or on cloudy stretches</li>
+                <li>Improved mood within days of vacation with sun exposure</li>
+            </ul>
+
+            <h3>Bone and Muscle Health</h3>
+            <p>Vitamin D is essential for calcium absorption and muscle function. Chronic deficiency leads to:</p>
+            <ul>
+                <li>Muscle weakness and aches (especially legs and lower back)</li>
+                <li>Bone pain, particularly in the spine and pelvis</li>
+                <li>Increased risk of osteoporosis (relevant even for younger programmers)</li>
+                <li>Delayed recovery from workouts</li>
+            </ul>
+            <p>The sedentary programmer is already at risk for bone density loss. Vitamin D deficiency accelerates this process.</p>
+
+            <h3>Developer-Specific Symptoms</h3>
+            <p>Because programmers have unique lifestyle patterns, they experience deficiency symptoms in specific ways:</p>
+            <ul>
+                <li><strong>3 PM crashes:</strong> Inability to focus or debug after lunch, forcing a switch to low-cognitive-load tasks (meetings, emails, documentation)</li>
+                <li><strong>Monday resilience:</strong> Weekend sun exposure provides temporary relief, then symptoms return by Tuesday/Wednesday</li>
+                <li><strong>Context-switch difficulty:</strong> Switching between codebases or switching from meetings to deep work becomes harder than it should</li>
+                <li><strong>Standup irritability:</strong> Morning meetings are tolerable, but by day 3-4 without sun, your patience for blockers decreases</li>
+                <li><strong>Deploy anxiety:</strong> Decisions about shipping code feel harder, even when the code is ready</li>
+            </ul>
+        </section>
+
+        <!-- The Science -->
+        <h2>The Science: Why Vitamin D Matters</h2>
+        <section>
+            <p>Vitamin D isn't really a vitamin—it's a prohormone, a precursor to a potent signaling molecule that regulates 3% of your entire genome. This isn't a micronutrient with minor effects. It's a hormonal system that your body relies on for survival.</p>
+
+            <h3>Vitamin D Receptor Genes</h3>
+            <p>Vitamin D exerts its effects by binding to the vitamin D receptor (VDR), a protein found in virtually every cell in your body. When active vitamin D binds to VDR, it triggers gene expression changes that affect:</p>
+            <ul>
+                <li><strong>Immune system:</strong> Activates T cells, B cells, and macrophages; increases antimicrobial peptide production</li>
+                <li><strong>Brain function:</strong> Regulates dopamine and serotonin synthesis; supports neuroplasticity and synaptic pruning</li>
+                <li><strong>Calcium homeostasis:</strong> Enables intestinal calcium absorption; regulates parathyroid hormone</li>
+                <li><strong>Cell proliferation:</strong> Prevents uncontrolled cell growth; supports apoptosis of damaged cells</li>
+                <li><strong>Circadian rhythm:</strong> Syncs with light exposure to regulate sleep-wake cycles</li>
+            </ul>
+
+            <h3>Immune Function</h3>
+            <p>Your innate immune system (your first line of defense against pathogens) depends on vitamin D. Deficiency reduces the production of cathelicidin and beta-defensin, antimicrobial peptides that kill bacteria and viruses. This is why deficient individuals get sick more often and recover more slowly.</p>
+
+            <h3>Neurotransmitter Synthesis</h3>
+            <p>Vitamin D is a cofactor for tyrosine hydroxylase, the enzyme that converts tyrosine to L-DOPA (the precursor to dopamine). It also supports serotonin synthesis via tryptophan hydroxylase. These are the neurotransmitters that control motivation, mood, reward-seeking behavior, and attention. Without adequate vitamin D, your brain struggles to manufacture the chemicals needed for clear thinking.</p>
+        </section>
+
+        <!-- How Much Do You Need -->
+        <h2>How Much Vitamin D Do You Need?</h2>
+        <section>
+            <p>The recommended dietary allowance (RDA) for vitamin D is 600-800 IU daily, set by the Institute of Medicine. This is the amount needed to prevent rickets and severe deficiency in the general population. If you're a programmer, this is inadequate.</p>
+
+            <h3>Blood Test Ranges</h3>
+            <p>Vitamin D status is measured as 25-hydroxyvitamin D (25(OH)D) in nanograms per milliliter (ng/mL). Here's the breakdown:</p>
+            <ul>
+                <li><strong>Below 20 ng/mL:</strong> Severely deficient (risk of rickets, osteomalacia)</li>
+                <li><strong>20-29 ng/mL:</strong> Deficient (typical office worker range)</li>
+                <li><strong>30-49 ng/mL:</strong> Insufficient (functional deficiency, suboptimal cognition and immunity)</li>
+                <li><strong>50-80 ng/mL:</strong> Optimal (most cognitive and immune benefits realized)</li>
+                <li><strong>Above 100 ng/mL:</strong> Potentially excessive (rare, toxicity threshold is ~150 ng/mL)</li>
+            </ul>
+
+            <h3>Optimal Range for Programmers</h3>
+            <p>Programmers should aim for 50-80 ng/mL. This is above the RDA minimum and provides measurable cognitive and immune benefits. The average programmer has a baseline of 20-30 ng/mL in winter months. Reaching 50-80 ng/mL requires supplementation, not food alone.</p>
+
+            <h3>Why 5000 IU for Indoor Workers</h3>
+            <p>The punchDev recommendation for programmers and indoor workers is 5000 IU daily. Here's why:</p>
+            <ul>
+                <li><strong>Evidence base:</strong> Studies show 4000-5000 IU daily raises levels from 25 to 50 ng/mL in 3 months</li>
+                <li><strong>Safety margin:</strong> 5000 IU is well below the tolerable upper limit of 10,000 IU daily; toxicity requires sustained intake above 40,000 IU</li>
+                <li><strong>Programmer-specific:</strong> Indoor workers with zero sunlight exposure need the upper end of supplementation</li>
+                <li><strong>Seasonal adjustment:</strong> 5000 IU covers winter deficiency; in summer, you might reduce to 2000 IU if you're getting midday sun</li>
+                <li><strong>Accountability:</strong> A fixed daily dose (not a weekly or monthly dose) creates consistency</li>
+            </ul>
+        </section>
+
+        <!-- Best Sources -->
+        <h2>Best Sources of Vitamin D</h2>
+        <section>
+            <h3>Sunlight (Unrealistic for Programmers)</h3>
+            <p>The textbook answer is 15 minutes of midday sun exposure, 3-5 times per week. This produces 1000-4000 IU depending on skin tone, latitude, and season. For programmers, this is unrealistic:</p>
+            <ul>
+                <li>Your commute is before sunrise or after sunset</li>
+                <li>Midday sun is when you're deepest in flow state</li>
+                <li>Winter doesn't provide sufficient UVB regardless of effort</li>
+                <li>You can't manufacture 5000 IU from sun alone without excessive UV damage risk</li>
+            </ul>
+            <p>Getting sun exposure is good for mood and circadian rhythm, but it cannot replace supplementation for programmers.</p>
+
+            <h3>Food Sources (Limited)</h3>
+            <p>Most foods contain negligible amounts of vitamin D. The few exceptions are fatty fish and fortified dairy:</p>
+            <ul>
+                <li>Salmon (3.5 oz): ~450 IU</li>
+                <li>Mackerel (3.5 oz): ~360 IU</li>
+                <li>Egg yolk (1 large): ~40 IU</li>
+                <li>Fortified milk (1 cup): ~100-200 IU</li>
+                <li>Fortified orange juice (1 cup): ~100 IU</li>
+            </ul>
+            <p>You'd need to eat salmon daily to reach 5000 IU from food alone. This is impractical and expensive. Supplementation is the only realistic approach for programmers.</p>
+
+            <h3>Supplementation: D3 (Cholecalciferol) vs D2</h3>
+            <p>Vitamin D comes in two forms: D2 (ergocalciferol) and D3 (cholecalciferol). D3 is superior:</p>
+            <ul>
+                <li><strong>D3 (cholecalciferol):</strong> The form your skin produces from sunlight; more bioavailable; stays in circulation longer; preferred for supplementation</li>
+                <li><strong>D2 (ergocalciferol):</strong> Synthetic form found in most fortified foods and prescription supplements; less bioavailable; shorter half-life; less effective</li>
+            </ul>
+            <p>Always choose D3 supplements. Look for "cholecalciferol" on the label, not "ergocalciferol."</p>
+        </section>
+
+        <!-- Supplementation Protocol -->
+        <h2>Supplementation Protocol for Programmers</h2>
+        <section>
+            <h3>5000 IU Daily Vitamin D3</h3>
+            <p>The evidence-based protocol for indoor workers:</p>
+            <ul>
+                <li><strong>Dose:</strong> 5000 IU daily (not per week, not per month)</li>
+                <li><strong>Form:</strong> Vitamin D3 (cholecalciferol), not D2</li>
+                <li><strong>With fat:</strong> Take with breakfast or lunch (D3 is fat-soluble; absorption requires dietary fat)</li>
+                <li><strong>Consistency:</strong> Every single day, winter and summer</li>
+                <li><strong>Baseline test:</strong> Get a blood test before starting (25(OH)D level)</li>
+                <li><strong>Retest:</strong> After 12 weeks, retest to confirm you've reached 50-80 ng/mL</li>
+            </ul>
+
+            <h3>Optimization</h3>
+            <p>If your retest shows you're above 80 ng/mL, reduce to 3000-4000 IU. If you're still below 50 ng/mL, increase to 7000 IU. Most programmers reach optimal levels at 5000 IU.</p>
+
+            <h3>Seasonal Adjustment (Optional)</h3>
+            <p>If you live in a northern latitude and get significant midday sun exposure in summer, you can reduce to 2000 IU from June to August. In winter, increase back to 5000 IU. Most programmers find it simpler to just take 5000 IU year-round.</p>
+
+            <h3>When to Expect Results</h3>
+            <p>Vitamin D is fat-soluble and accumulates in your system. You'll notice improvements in energy and mood within 2-3 weeks, but full effects (immune optimization, cognitive clarity) take 8-12 weeks. Stick with it.</p>
+        </section>
+
+        <!-- CTA -->
+        <h2>Take Action: Get Your Vitamin D Levels Optimized</h2>
+        <section>
+            <div class="cta-box">
+                <p>Your 3 PM crashes, brain fog, and winter mood dips don't have to be inevitable. Start with a 25(OH)D blood test, then implement 5000 IU of vitamin D3 daily with breakfast.</p>
+
+                <p><strong>punchDev's localhost:3000</strong> contains our formulation: 5000 IU of vitamin D3 (cholecalciferol) in bioavailable softgel form. Designed for programmers, tested for effectiveness, and dosed for the indoor lifestyle you actually live.</p>
+
+                <a href="https://punchdev.com#localhost:3000" class="cta-button">Shop localhost:3000 (Vitamin D3)</a>
+
+                <p style="margin-top: 1.5rem; font-size: 0.875rem; color: #94a3b8;">
+                    Results typically appear within 2-3 weeks for energy and mood. Full cognitive and immune benefits realized by week 8-12. Retest blood levels after 12 weeks to confirm 50-80 ng/mL range.
+                </p>
+            </div>
+
+            <h3>The 3-Step Protocol</h3>
+            <ol>
+                <li><strong>Test:</strong> Get your 25(OH)D level from your doctor or online lab (LabCorp, Quest)</li>
+                <li><strong>Supplement:</strong> 5000 IU vitamin D3 daily with a meal containing fat</li>
+                <li><strong>Retest:</strong> After 12 weeks, confirm you've reached 50-80 ng/mL</li>
+            </ol>
+
+            <p>This is the most evidence-backed intervention for programmer energy, cognition, and immunity. Don't rely on willpower to "get more sun." You won't. Supplement instead.</p>
+        </section>
+
+        <!-- Footer -->
+        <hr style="border-color: #1e293b; margin: 2rem 0;">
+        <footer style="text-align: center; color: #94a3b8; font-size: 0.875rem;">
+            <p>This article is for educational purposes. Consult your healthcare provider before starting any supplementation protocol, especially if you're on medications or have existing health conditions.</p>
+            <p>&copy; 2025 punchDev. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

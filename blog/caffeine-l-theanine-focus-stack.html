@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caffeine + L-Theanine: The Ultimate Focus Stack for Coding</title>
+    <meta name="description" content="The 1:2 ratio studied in peer-reviewed research. 200mg caffeine + 400mg L-theanine = smooth focus without jitters. Mechanism, dosing, timing.">
+    <meta name="keywords" content="caffeine L-theanine, focus stack, coding supplements, nootropics, caffeine jitters">
+    <link rel="canonical" href="https://punchdev.com/blog/caffeine-l-theanine-focus-stack.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Caffeine + L-Theanine: The Ultimate Focus Stack for Coding">
+    <meta property="og:description" content="The 1:2 ratio studied in peer-reviewed research. 200mg caffeine + 400mg L-theanine = smooth focus without jitters.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://punchdev.com/blog/caffeine-l-theanine-focus-stack.html">
+    <meta property="og:image" content="https://punchdev.com/og-caffeine-theanine.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Caffeine + L-Theanine: The Ultimate Focus Stack for Coding">
+    <meta name="twitter:description" content="The 1:2 ratio studied in peer-reviewed research. 200mg caffeine + 400mg L-theanine = smooth focus without jitters.">
+    <meta name="twitter:image" content="https://punchdev.com/og-caffeine-theanine.jpg">
+
+    <!-- Structured Data - Article Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Caffeine + L-Theanine: The Ultimate Focus Stack for Coding",
+        "description": "The 1:2 ratio studied in peer-reviewed research. 200mg caffeine + 400mg L-theanine = smooth focus without jitters. Mechanism, dosing, timing.",
+        "image": "https://punchdev.com/og-caffeine-theanine.jpg",
+        "datePublished": "2026-01-24",
+        "dateModified": "2026-01-24",
+        "wordCount": 2000,
+        "author": {
+            "@type": "Organization",
+            "name": "punchDev Labs",
+            "url": "https://punchdev.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "punchDev",
+            "url": "https://punchdev.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://punchdev.com/logo.png"
+            }
+        }
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "punchDev",
+                "item": "https://punchdev.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://punchdev.com/blog/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Caffeine + L-Theanine: The Ultimate Focus Stack for Coding",
+                "item": "https://punchdev.com/blog/caffeine-l-theanine-focus-stack.html"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Person Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "punchDev Labs",
+        "url": "https://punchdev.com",
+        "sameAs": [
+            "https://twitter.com/punchdev",
+            "https://github.com/punchdev"
+        ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        punch: {
+                            bg: '#020617',
+                            card: '#0f172a',
+                            border: '#1e293b',
+                            primary: '#6366f1',
+                            accent: '#d946ef',
+                            success: '#34d399',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+
+        .scanline {
+            width: 100%;
+            height: 100px;
+            z-index: 10;
+            background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(99, 102, 241, 0.03) 50%, rgba(0,0,0,0) 100%);
+            opacity: 0.1;
+            position: absolute;
+            bottom: 100%;
+            animation: scanline 10s linear infinite;
+            pointer-events: none;
+        }
+        @keyframes scanline {
+            0% { bottom: 100%; }
+            100% { bottom: -100px; }
+        }
+
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .article-content {
+            font-size: 1.0625rem;
+            line-height: 1.75;
+        }
+
+        .article-content h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .article-content h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #e2e8f0;
+        }
+
+        .article-content p {
+            margin-bottom: 1rem;
+            color: #cbd5e1;
+        }
+
+        .article-content ul, .article-content ol {
+            margin-bottom: 1.5rem;
+            margin-left: 1.5rem;
+            color: #cbd5e1;
+        }
+
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .article-content strong {
+            color: #e2e8f0;
+            font-weight: 600;
+        }
+
+        .article-content em {
+            color: #cbd5e1;
+            font-style: italic;
+        }
+
+        .highlight-box {
+            background: rgba(99, 102, 241, 0.1);
+            border-left: 4px solid #6366f1;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin: 2rem 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: #e2e8f0;
+        }
+
+        .dosage-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        .dosage-table th,
+        .dosage-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #334155;
+            color: #cbd5e1;
+        }
+
+        .dosage-table th {
+            background: rgba(99, 102, 241, 0.1);
+            color: #e2e8f0;
+            font-weight: 600;
+        }
+
+        .cta-section {
+            background: rgba(99, 102, 241, 0.05);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .cta-section h3 {
+            margin-top: 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #6366f1;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #4f46e5;
+            box-shadow: 0 0 30px rgba(99, 102, 241, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-punch-bg text-slate-300 font-sans antialiased overflow-x-hidden relative">
+
+    <!-- Scanline Effect -->
+    <div class="fixed inset-0 pointer-events-none z-50 h-full w-full overflow-hidden">
+        <div class="scanline"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-40 top-0 border-b border-punch-border glass-panel">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="terminal" class="text-punch-accent h-6 w-6"></i>
+                    <span class="font-bold text-white text-xl tracking-tight">punch<span class="text-punch-primary">Dev</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8 font-mono text-sm">
+                        <a href="../index.html" class="hover:text-punch-success transition-colors">./home</a>
+                        <a href="../products.html" class="hover:text-punch-success transition-colors">./products</a>
+                        <a href="../science.html" class="hover:text-punch-success transition-colors">./science</a>
+                        <a href="index.html" class="text-punch-success">./blog</a>
+                        <a href="../about.html" class="hover:text-punch-success transition-colors">./about</a>
+                    </div>
+                </div>
+                <div>
+                    <button class="bg-punch-primary/10 hover:bg-punch-primary/20 text-punch-primary border border-punch-primary/50 px-4 py-2 rounded font-mono text-sm transition-all hover:shadow-[0_0_15px_rgba(99,102,241,0.5)]">
+                        Init Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="bg-slate-950 border-b border-punch-border pt-20 pb-4">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-2 text-sm font-mono text-slate-500">
+                <a href="../index.html" class="hover:text-punch-primary transition-colors">punchDev</a>
+                <span>/</span>
+                <a href="index.html" class="hover:text-punch-primary transition-colors">blog</a>
+                <span>/</span>
+                <span class="text-punch-primary">caffeine-l-theanine</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Article Header -->
+    <article class="py-16 sm:py-24 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-8">
+                <span class="text-xs font-mono text-punch-success bg-punch-success/10 px-2 py-1 rounded">Nootropics</span>
+            </div>
+
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-6">
+                Caffeine + L-Theanine: The Ultimate Focus Stack for Coding
+            </h1>
+
+            <div class="flex items-center gap-4 text-slate-400 font-mono text-sm mb-8">
+                <time datetime="2026-01-24">Jan 24, 2026</time>
+                <span>•</span>
+                <span>11 min read</span>
+            </div>
+
+            <p class="text-xl text-slate-300 leading-relaxed mb-8">
+                <strong>Caffeine + L-theanine</strong> is the most studied, evidence-backed nootropic combination for sustained cognitive performance. The synergy works: caffeine drives dopamine and norepinephrine; L-theanine smooths the response, blocks jitters, and enhances alpha brain waves. Dose it right at <strong>200mg caffeine + 400mg L-theanine (1:2 ratio)</strong>, time it 30–45 minutes before deep work, and you get 4–6 hours of clean, linear focus without the crash.
+            </p>
+        </div>
+    </article>
+
+    <!-- Article Content -->
+    <section class="article-content pb-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <h2>The Problem: Why Caffeine Alone Causes Jitters</h2>
+            <p>
+                Caffeine is a powerful tool. It blocks adenosine receptors—the molecule that signals fatigue—and floods your system with dopamine and norepinephrine, the neurotransmitters that drive alertness, motivation, and focus. But caffeine does this indiscriminately. It jacks up both the useful activation and the neural noise: tremors, anxiety, restlessness, and the afternoon crash.
+            </p>
+            <p>
+                Most developers reach for a second cup of coffee, energy drink, or synthetic "focus" pill around 2 PM, only to compound the problem. By 4 PM, you're riding a jagged wave: spikes of anxiety, difficulty concentrating, and that familiar 6 PM flatline when the caffeine half-life catches up.
+            </p>
+            <p>
+                The jitters exist for a chemical reason: unchecked caffeine elevates glutamate (your brain's excitatory neurotransmitter) and suppresses GABA (the inhibitory, calming one). Your nervous system gets locked in overdrive. You can't redirect that energy into focus—it leaks into fidgeting, task-switching, and analysis paralysis.
+            </p>
+
+            <h2>The Science of Caffeine: How It Works</h2>
+            <p>
+                Caffeine operates through adenosine antagonism. Adenosine accumulates in your brain throughout the day as a byproduct of neural activity. By late afternoon, adenosine levels signal sleep. Caffeine binds to adenosine receptors, blocking that signal and, in effect, lying to your brain about fatigue.
+            </p>
+            <p>
+                But blocking adenosine is only half the story. Caffeine also:
+            </p>
+            <ul>
+                <li><strong>Increases dopamine</strong> – The motivation molecule. Dopamine drives focus, reward-seeking, and sustained effort.</li>
+                <li><strong>Elevates norepinephrine</strong> – Your attention neurotransmitter. Norepinephrine sharpens perception and ignites the fight-or-flight response.</li>
+                <li><strong>Promotes phosphodiesterase inhibition</strong> – This enzyme normally breaks down cAMP, a second messenger that amplifies signal strength in neurons. Caffeine suppresses phosphodiesterase, keeping neural signals hot.</li>
+            </ul>
+            <p>
+                The half-life of caffeine is roughly 5–6 hours. That means if you drink 200mg at 8 AM, 100mg remains at 2 PM and 50mg at 8 PM. This is why caffeine after 2 PM often ruins sleep: your nervous system stays partly activated all night.
+            </p>
+
+            <h2>The Science of L-Theanine: The Smooth Operator</h2>
+            <p>
+                L-theanine is an amino acid found almost exclusively in green tea. Unlike caffeine, it crosses the blood-brain barrier easily and produces a completely different neurochemical profile: it promotes calm, laser-focused attention without sedation.
+            </p>
+            <p>
+                Here's what L-theanine does:
+            </p>
+            <ul>
+                <li><strong>Increases alpha brain waves</strong> – These oscillations (8–12 Hz) are associated with relaxed alertness, creative thinking, and the hyperfocus state you feel during flow. Meditation, deep work, and high-quality sleep all involve elevated alpha.</li>
+                <li><strong>Modulates GABA and glycine</strong> – L-theanine binds to GABA receptors, enhancing inhibitory tone in the nervous system. This doesn't make you sleepy; it makes you calm. Glycine, another inhibitory neurotransmitter, also gets a boost, creating a kind of neural damping that filters noise.</li>
+                <li><strong>Doesn't directly block adenosine</strong> – Unlike caffeine, L-theanine doesn't suppress the sleep signal. Instead, it rebalances excitation and inhibition, so your brain stays composed.</li>
+            </ul>
+            <p>
+                L-theanine has a shorter half-life than caffeine—about 30–50 minutes to peak concentration, then a gradual decline over 5–8 hours. Alone, L-theanine is mildly alert-promoting; it won't override fatigue, but it creates a baseline of calm clarity.
+            </p>
+
+            <h2>The Synergy: Why 1:2 Ratio Works</h2>
+            <p>
+                The magic happens when you combine caffeine and L-theanine in the <strong>1:2 ratio</strong>. Multiple peer-reviewed studies demonstrate this pairing:
+            </p>
+            <ul>
+                <li><strong>Haskell et al. (2008)</strong> – Single dose of 50mg caffeine + 100mg L-theanine improved accuracy on visual search tasks and reduced jitter.</li>
+                <li><strong>Giesbrecht et al. (2010)</strong> – A meta-analysis across multiple trials showed caffeine + L-theanine consistently outperformed caffeine alone on attention, focus duration, and error reduction. Participants reported feeling "sharp but calm."</li>
+                <li><strong>Foxe et al. (2012)</strong> – fMRI evidence that the combination enhanced activity in regions associated with attention (anterior cingulate cortex) while reducing anxiety-related activation in the amygdala.</li>
+            </ul>
+            <p>
+                The mechanism is elegant: L-theanine smooths caffeine's sharp rise in dopamine and norepinephrine by increasing GABA, which acts as a buffer. You get all the focus-driving upside of caffeine—motivation, fast processing, dopamine-driven reward—but the nervous system stays poised, not frantic. Anxiety is suppressed. Attention narrows. The jitters vanish.
+            </p>
+
+            <h2>Optimal Dosing: 200mg Caffeine + 400mg L-Theanine</h2>
+            <p>
+                The research consensus and practical standard for developers is:
+            </p>
+
+            <table class="dosage-table">
+                <tr>
+                    <th>Component</th>
+                    <th>Dose</th>
+                    <th>Source</th>
+                </tr>
+                <tr>
+                    <td>Caffeine</td>
+                    <td>200mg</td>
+                    <td>1–2 cups strong coffee, or pure caffeine powder</td>
+                </tr>
+                <tr>
+                    <td>L-Theanine</td>
+                    <td>400mg</td>
+                    <td>2–3 cups green tea (20–30mg per cup), or supplement</td>
+                </tr>
+            </table>
+
+            <p>
+                Why this ratio?
+            </p>
+            <ul>
+                <li><strong>200mg caffeine</strong> is a moderate-to-high single dose. It's enough to block adenosine and elevate dopamine/norepinephrine without causing most people to feel wired. A single espresso shot has ~60–80mg; a cup of filter coffee has ~100–120mg.</li>
+                <li><strong>400mg L-theanine</strong> is the amount needed to fully buffer caffeine's excitatory spike. At 1:2, the L-theanine dose scales proportionally, and you get that smooth, linear activation rather than a sharp rise and fall.</li>
+            </ul>
+            <p>
+                If you're sensitive to caffeine or new to nootropics, start with 100mg caffeine + 200mg L-theanine and titrate up over 2–3 weeks. If you're a regular coffee drinker, 200mg caffeine + 400mg L-theanine is your baseline sweet spot.
+            </p>
+
+            <h2>Timing: When to Take It for Maximum Effect</h2>
+            <p>
+                Both caffeine and L-theanine have different absorption curves. Caffeine peaks in 30–60 minutes; L-theanine peaks in 30–50 minutes. For best results:
+            </p>
+            <ul>
+                <li><strong>Take 30–45 minutes before your deep work block.</strong> This lets both compounds reach steady state right as you sit down. Your focus onset will feel natural, not sudden.</li>
+                <li><strong>Take on an empty stomach or with a light meal.</strong> Food delays absorption. Empty stomach = faster peak, but more risk of nausea if you're sensitive. A light meal (banana, toast) buffers absorption without significantly delaying it.</li>
+                <li><strong>Avoid after 2 PM.</strong> Caffeine's 5–6 hour half-life means a 3 PM dose still has 50–100mg in your system at 9 PM, tanking sleep quality.</li>
+                <li><strong>Stay hydrated.</strong> Both compounds are diuretics. Drink water throughout the morning to maintain blood volume and prevent headaches.</li>
+            </ul>
+            <p>
+                Best practice: Take the stack at 8 AM before a 2–3 hour deep work session. You'll be in flow from 8:45 AM–noon, then gradually taper off by 1–2 PM. Your afternoon is free for meetings, lighter tasks, or a second (lighter) cycle if needed.
+            </p>
+
+            <h2>What to Expect: The 4–6 Hour Window</h2>
+            <p>
+                The first 30 minutes: nothing visible. Your body is absorbing and distributing compounds.
+            </p>
+            <p>
+                Minutes 30–45: Onset. You'll feel a subtle shift—mental clarity, steady alertness. No jitters. No anxiety. Just a baseline readiness to think hard.
+            </p>
+            <p>
+                Hour 1–4: The sweet spot. Focus is laser-sharp. Task-switching becomes effortful (good—you're resisting distractions). Typing feels smooth. Complex problem-solving feels almost automatic. Fatigue is distant.
+            </p>
+            <p>
+                Hour 4–6: Gradual decline. Still focused, but the edge softens. This is a good time for documentation, code review, or simpler tasks. Not unpleasant—just a natural descent.
+            </p>
+            <p>
+                Hour 6+: You're off the stack. Baseline energy returns. No crash if dosed correctly, though some people report a mild dip around hour 5–6.
+            </p>
+
+            <div class="highlight-box">
+                <p><strong>Pro tip:</strong> Don't redose within the same day. A second dose at 2 PM will keep you wired until 8+ PM and wreck sleep. If you need afternoon focus, take a 15-minute walk, do pushups, or grab a cold shower. The mental reset will often outperform a second caffeine hit.</p>
+            </div>
+
+            <h2>Side Effects & Contraindications</h2>
+            <p>
+                Caffeine + L-theanine is well-tolerated in most people, but watch for:
+            </p>
+            <ul>
+                <li><strong>Caffeine sensitivity:</strong> If you're prone to anxiety, heart palpitations, or tremors with caffeine, start at 50–100mg and titrate slowly.</li>
+                <li><strong>Sleep disruption:</strong> Caffeine after 2 PM almost always impairs sleep onset and deep sleep architecture. Avoid.</li>
+                <li><strong>Dehydration:</strong> Both compounds increase urine output. Drink 2–3 liters of water on stack days.</li>
+                <li><strong>Headaches:</strong> Some people report mild headaches if they skip the stack after daily use. This is adenosine rebound. Taper gradually or take every other day.</li>
+                <li><strong>Heart conditions:</strong> If you have arrhythmia, high blood pressure, or a family history of cardiac issues, consult a doctor before using caffeine regularly.</li>
+                <li><strong>Pregnancy:</strong> Limit caffeine to <150mg/day during pregnancy (equivalent to ~1 cup of coffee). L-theanine is generally safe, but talk to your OB/GYN.</li>
+            </ul>
+
+            <h2>DIY vs. Pre-Made Stacks</h2>
+            <p>
+                You have two paths:
+            </p>
+            <p>
+                <strong>DIY:</strong> Buy caffeine anhydrous powder (~$10/250g) and L-theanine powder (~$20/100g). Weigh out 200mg caffeine + 400mg L-theanine, mix in water or juice, drink. Cost: ~$0.50 per dose. Upside: complete control, cheap. Downside: need a milligram scale, tastes bitter, easy to misweigh.
+            </p>
+            <p>
+                <strong>Pre-made capsules or drinks:</strong> Many nootropic brands sell caffeine + L-theanine pills in 1:2 ratios. You pay a premium (often $1–3 per dose), but you get convenience and accuracy. Some drinks (like energy shots or specialized coffee blends) also include the stack.
+            </p>
+            <p>
+                punchDev's <a href="../git-push.html" class="text-punch-primary hover:text-punch-accent">git push --force</a> includes the exact 200mg caffeine + 400mg L-theanine stack, plus Alpha GPC (a choline source that enhances acetylcholine production for sustained working memory). This removes the guesswork and pairs the stack with a complementary nootropic designed specifically for complex coding.
+            </p>
+
+            <h2>Stacking: What Works With Caffeine + L-Theanine</h2>
+            <p>
+                The caffeine + L-theanine duo is foundational. It plays well with:
+            </p>
+            <ul>
+                <li><strong>Alpha GPC (300–600mg):</strong> Boosts acetylcholine, which improves working memory and sustained attention. Natural synergy.</li>
+                <li><strong>L-Tyrosine (500–1000mg):</strong> Replenishes dopamine. Useful if you're stacking multiple days in a row, though unnecessary on single-dose days.</li>
+                <li><strong>Magnesium (200–400mg):</strong> Balances calcium, improves neurotransmitter balance, supports sleep quality. Take evening doses separate from caffeine.</li>
+            </ul>
+            <p>
+                Skip stacking with other stimulants (guarana, yohimbine, synephrine) or anxiety-suppressants (phenibut, racetams) without careful titration. The combination can be unpredictable.
+            </p>
+
+            <h2>The Bottom Line: The Research-Backed Truth</h2>
+            <p>
+                Caffeine + L-theanine is the most evidence-supported, lowest-risk nootropic pairing for sustained cognitive performance. The mechanism is understood. The dosing is standard. The timing is predictable.
+            </p>
+            <p>
+                <strong>200mg caffeine + 400mg L-theanine (1:2 ratio)</strong> gives you:
+            </p>
+            <ul>
+                <li>4–6 hours of clean, linear focus</li>
+                <li>Motivation and task-engagement without anxiety</li>
+                <li>Alpha brain waves for flow state access</li>
+                <li>No jitters, no afternoon crash (if timed right)</li>
+                <li>Minimal side effects in healthy adults</li>
+            </ul>
+            <p>
+                It's not magic. It won't fix poor sleep, bad architecture, or unclear thinking. But it removes friction from deep work, extends focus windows, and lets you redirect mental energy into problem-solving instead of fighting neurotransmitter chaos.
+            </p>
+
+            <div class="cta-section">
+                <h3>Ready to Deploy the Stack?</h3>
+                <p style="margin-bottom: 1.5rem;">
+                    punchDev's <strong>git push --force</strong> includes the exact 200mg caffeine + 400mg L-theanine formulation, plus Alpha GPC for working memory durability. No guesswork. No DIY powder mixing. Just the science.
+                </p>
+                <a href="../git-push.html" class="cta-button">Learn About git push --force</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-12 border-t border-slate-900 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center gap-2 mb-4 md:mb-0">
+                <i data-lucide="terminal" class="text-slate-600 h-6 w-6"></i>
+                <span class="font-bold text-slate-500 text-xl tracking-tight">punch<span class="text-slate-600">Dev</span></span>
+            </div>
+
+            <div class="flex space-x-6 text-sm text-slate-500 font-mono">
+                <a href="../terms.html" class="hover:text-punch-primary">Terms</a>
+                <a href="../privacy.html" class="hover:text-punch-primary">Privacy</a>
+                <a href="../shipping.html" class="hover:text-punch-primary">Shipping</a>
+                <a href="../faq.html" class="hover:text-punch-primary">FAQ</a>
+            </div>
+
+            <div class="mt-4 md:mt-0 text-slate-600 text-sm">
+                &copy; 2026 punchDev Labs. All systems operational.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
