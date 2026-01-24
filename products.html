@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Supplements for Focus & Flow | punchDev</title>
+    <meta name="description" content="Modular nootropic stacks for programmers. Caffeine + L-theanine focus, daily vitamins, adaptogens, sleep aids. Optimize your wetware.">
+    <link rel="canonical" href="https://punchdev.com/products.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Developer Supplements for Focus & Flow | punchDev">
+    <meta property="og:description" content="Modular nootropic stacks for programmers. Caffeine + L-theanine focus, daily vitamins, adaptogens, sleep aids.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://punchdev.com/products.html">
+    <meta property="og:image" content="https://punchdev.com/og-products.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Developer Supplements for Focus & Flow">
+    <meta name="twitter:description" content="Modular nootropic stacks for programmers. Optimize your wetware.">
+    <meta name="twitter:image" content="https://punchdev.com/og-products.jpg">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Developer Supplements",
+      "description": "Modular supplement stacks for programmers: focus, daily vitamins, stress management, and sleep optimization.",
+      "url": "https://punchdev.com/products.html",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "Product",
+            "position": 1,
+            "name": "git push --force",
+            "url": "https://punchdev.com/git-push.html"
+          },
+          {
+            "@type": "Product",
+            "position": 2,
+            "name": "localhost:3000",
+            "url": "https://punchdev.com/localhost-3000.html"
+          },
+          {
+            "@type": "Product",
+            "position": 3,
+            "name": "merge conflict",
+            "url": "https://punchdev.com/merge-conflict.html"
+          },
+          {
+            "@type": "Product",
+            "position": 4,
+            "name": "nightly build",
+            "url": "https://punchdev.com/nightly-build.html"
+          }
+        ]
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I stack multiple products?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. All products are designed to work together. localhost:3000 is infrastructure (take daily). git push is for acute focus. merge conflict manages stress. nightly build for sleep. Start with one and add as needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do these contain stimulants?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only git push --force contains caffeine (200mg). localhost:3000, merge conflict, and nightly build are stimulant-free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this third-party tested?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every batch is tested for purity, heavy metals, and label accuracy by independent labs. Certificates of Analysis available on request."
+          }
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://punchdev.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Products",
+          "item": "https://punchdev.com/products.html"
+        }
+      ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        punch: {
+                            bg: '#020617',
+                            card: '#0f172a',
+                            border: '#1e293b',
+                            primary: '#6366f1',
+                            accent: '#d946ef',
+                            success: '#34d399',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+    </style>
+</head>
+<body class="bg-punch-bg text-slate-300 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-40 top-0 border-b border-punch-border bg-punch-bg/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="terminal" class="text-punch-accent h-6 w-6"></i>
+                    <a href="index.html" class="font-bold text-white text-xl tracking-tight">punch<span class="text-punch-primary">Dev</span></a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8 font-mono text-sm">
+                        <a href="products.html" class="text-punch-success transition-colors">./products</a>
+                        <a href="science.html" class="hover:text-punch-success transition-colors">./science</a>
+                        <a href="blog/index.html" class="hover:text-punch-success transition-colors">./blog</a>
+                        <a href="about.html" class="hover:text-punch-success transition-colors">./about</a>
+                    </div>
+                </div>
+                <div>
+                    <button class="bg-punch-primary/10 hover:bg-punch-primary/20 text-punch-primary border border-punch-primary/50 px-4 py-2 rounded font-mono text-sm transition-all hover:shadow-[0_0_15px_rgba(99,102,241,0.5)]">
+                        Init Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6">
+                Supplements for Developers Who Ship
+            </h1>
+            <p class="mt-6 max-w-3xl mx-auto text-xl text-slate-400 font-light">
+                Hardware is cheap. <span class="text-white font-medium">Wetware</span> is expensive. Modular stacks for focus, baseline health, stress management, and recovery. No proprietary blends. No fairy dust.
+            </p>
+            <div class="mt-10">
+                <a href="#products" class="inline-flex items-center gap-2 bg-punch-primary hover:bg-indigo-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-[0_0_20px_rgba(99,102,241,0.3)] hover:shadow-[0_0_30px_rgba(99,102,241,0.5)]">
+                    Browse Products
+                    <i data-lucide="arrow-down" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Problem Section -->
+    <section class="py-20 bg-slate-950 border-y border-slate-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 text-center">
+                Your Code Is Clean. Your Diet Is Deprecated.
+            </h2>
+            <div class="space-y-6 text-slate-300 text-lg leading-relaxed">
+                <p>
+                    You haven't seen sunlight in 6 months. Your diet is coffee, ramen, and whatever your roommate left in the fridge. Energy drinks give you jitters. By 3pm you're staring at the screen wondering if you're even a real developer.
+                </p>
+                <p>
+                    Generic multivitamins were designed for people who go outside. Pre-workouts were designed for people who lift heavy objects. You need supplements designed for people who architect soul. Who ship code. Who stay awake during the architect's monologue.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="products" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                Modular Supplements for Every Stage of the Development Lifecycle
+            </h2>
+            <p class="max-w-3xl mx-auto text-lg text-slate-400">
+                punchDev treats your biology like production infrastructure. Each supplement targets a specific layer of the stack. Use them individually or combine them for full-system optimization.
+            </p>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+
+            <!-- Product 1: git push -->
+            <div class="group relative bg-slate-900 rounded-2xl border border-slate-800 p-8 hover:border-punch-primary/50 transition-all hover:bg-slate-800/50">
+                <div class="absolute -top-6 left-8">
+                    <div class="bg-slate-950 border border-slate-800 px-4 py-2 rounded-full">
+                        <span class="text-xs font-mono text-punch-primary uppercase tracking-wider">High-Stim Focus</span>
+                    </div>
+                </div>
+
+                <div class="mt-4 mb-6">
+                    <i data-lucide="cpu" class="text-punch-primary w-12 h-12 mb-4"></i>
+                    <h3 class="text-3xl font-bold text-white font-mono mb-3">
+                        git push <span class="text-punch-primary">--force</span>
+                    </h3>
+                    <p class="text-lg text-slate-400 mb-4">
+                        Overwrite writer's block. Deploy to production.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h4 class="text-sm font-mono text-slate-500 uppercase tracking-wider mb-3">Key Ingredients</h4>
+                    <ul class="space-y-2 text-slate-300 font-mono text-sm">
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-punch-success"></i>
+                            Caffeine (200mg)
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-punch-success"></i>
+                            L-Theanine (400mg)
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-punch-success"></i>
+                            Alpha GPC (300mg)
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                    Jitter-free focus for complex problem solving. The 1:2 caffeine-to-L-theanine ratio studied in peer-reviewed research. No crash. No anxiety. Just flow state.
+                </p>
+
+                <div class="bg-slate-950 border border-slate-800 rounded-lg p-4 mb-6">
+                    <p class="text-xs text-slate-500 font-mono mb-1">Use Case:</p>
+                    <p class="text-sm text-slate-300">Pre-deep work. Before refactoring legacy code. When Claude is hallucinating and you need to debug manually.</p>
+                </div>
+
+                <a href="git-push.html" class="block w-full bg-slate-800 hover:bg-punch-primary text-white py-3 rounded font-bold transition-colors border border-slate-700 hover:border-punch-primary text-center">
+                    View Details →
+                </a>
+            </div>
+
+            <!-- Product 2: localhost:3000 -->
+            <div class="group relative bg-slate-900 rounded-2xl border border-punch-accent/30 p-8 shadow-[0_0_30px_rgba(217,70,239,0.1)] hover:shadow-[0_0_40px_rgba(217,70,239,0.15)] transition-all">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-punch-accent text-black text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                    Best Seller
+                </div>
+                <div class="absolute -top-6 left-8">
+                    <div class="bg-slate-950 border border-punch-accent/50 px-4 py-2 rounded-full">
+                        <span class="text-xs font-mono text-punch-accent uppercase tracking-wider">Daily Driver</span>
+                    </div>
+                </div>
+
+                <div class="mt-4 mb-6">
+                    <i data-lucide="activity" class="text-punch-accent w-12 h-12 mb-4"></i>
+                    <h3 class="text-3xl font-bold text-white font-mono mb-3">
+                        localhost<span class="text-punch-accent">:3000</span>
+                    </h3>
+                    <p class="text-lg text-slate-400 mb-4">
+                        Baseline stability. Prevent crashes during long sessions.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h4 class="text-sm font-mono text-slate-500 uppercase tracking-wider mb-3">Key Ingredients</h4>
+                    <ul class="space-y-2 text-slate-300 font-mono text-sm">
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-punch-success"></i>
+                            Vitamin D3 (5000 IU)
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-punch-success"></i>
+                            Magnesium Glycinate (400mg)
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-punch-success"></i>
+                            Methylated B-Complex
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-punch-success"></i>
+                            Electrolytes
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                    Fix nutritional debt from desk life. 5000 IU D3 for sunlight-deprived developers. Magnesium glycinate (the absorbable form, not the cheap oxide). Methylated B-vitamins for MTHFR gene variants.
+                </p>
+
+                <div class="bg-slate-950 border border-slate-800 rounded-lg p-4 mb-6">
+                    <p class="text-xs text-slate-500 font-mono mb-1">Use Case:</p>
+                    <p class="text-sm text-slate-300">Daily baseline. Always running in the background. The infrastructure layer for everything else.</p>
+                </div>
+
+                <a href="localhost-3000.html" class="block w-full bg-punch-accent hover:bg-fuchsia-400 text-black py-3 rounded font-bold transition-colors text-center">
+                    Subscribe & Save →
+                </a>
+            </div>
+
+            <!-- Product 3: merge conflict -->
+            <div class="group relative bg-slate-900 rounded-2xl border border-slate-800 p-8 hover:border-rose-500/50 transition-all hover:bg-slate-800/50">
+                <div class="absolute -top-6 left-8">
+                    <div class="bg-slate-950 border border-slate-800 px-4 py-2 rounded-full">
+                        <span class="text-xs font-mono text-rose-500 uppercase tracking-wider">Stress Management</span>
+                    </div>
+                </div>
+
+                <div class="mt-4 mb-6">
+                    <i data-lucide="alert-triangle" class="text-rose-500 w-12 h-12 mb-4"></i>
+                    <h3 class="text-3xl font-bold text-white font-mono mb-3">
+                        merge <span class="text-rose-500">conflict</span>
+                    </h3>
+                    <p class="text-lg text-slate-400 mb-4">
+                        Resolve issues. Automatically.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h4 class="text-sm font-mono text-slate-500 uppercase tracking-wider mb-3">Key Ingredients</h4>
+                    <ul class="space-y-2 text-slate-300 font-mono text-sm">
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-punch-success"></i>
+                            Ashwagandha KSM-66
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-punch-success"></i>
+                            Rhodiola Rosea
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-punch-success"></i>
+                            Magnesium Glycinate
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                    Calm the nervous system during outages. Reduce cortisol from deadline pressure. Evidence-based adaptogens for HPA axis regulation, not vibes.
+                </p>
+
+                <div class="bg-slate-950 border border-slate-800 rounded-lg p-4 mb-6">
+                    <p class="text-xs text-slate-500 font-mono mb-1">Use Case:</p>
+                    <p class="text-sm text-slate-300">During on-call rotations. Before code review. When production is on fire and Slack is screaming.</p>
+                </div>
+
+                <a href="merge-conflict.html" class="block w-full bg-slate-800 hover:bg-rose-500 text-white py-3 rounded font-bold transition-colors border border-slate-700 hover:border-rose-500 text-center">
+                    View Details →
+                </a>
+            </div>
+
+            <!-- Product 4: nightly build -->
+            <div class="group relative bg-slate-900 rounded-2xl border border-slate-800 p-8 hover:border-punch-success/50 transition-all hover:bg-slate-800/50">
+                <div class="absolute -top-6 left-8">
+                    <div class="bg-slate-950 border border-slate-800 px-4 py-2 rounded-full">
+                        <span class="text-xs font-mono text-punch-success uppercase tracking-wider">Deep Recovery</span>
+                    </div>
+                </div>
+
+                <div class="mt-4 mb-6">
+                    <i data-lucide="moon" class="text-punch-success w-12 h-12 mb-4"></i>
+                    <h3 class="text-3xl font-bold text-white font-mono mb-3">
+                        nightly <span class="text-punch-success">build</span>
+                    </h3>
+                    <p class="text-lg text-slate-400 mb-4">
+                        Garbage collection for your brain.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h4 class="text-sm font-mono text-slate-500 uppercase tracking-wider mb-3">Key Ingredients</h4>
+                    <ul class="space-y-2 text-slate-300 font-mono text-sm">
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-punch-success"></i>
+                            Tart Cherry Extract
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-punch-success"></i>
+                            Apigenin
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-punch-success"></i>
+                            L-Glycine
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-punch-success"></i>
+                            (No Melatonin)
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                    Enhance REM sleep for memory consolidation. Learn new APIs today, retain them tomorrow. No melatonin grogginess. Natural sleep architecture support.
+                </p>
+
+                <div class="bg-slate-950 border border-slate-800 rounded-lg p-4 mb-6">
+                    <p class="text-xs text-slate-500 font-mono mb-1">Use Case:</p>
+                    <p class="text-sm text-slate-300">Before bed after coding marathons. To recover from blue light exposure. When caffeine is still in your system at 11pm.</p>
+                </div>
+
+                <a href="nightly-build.html" class="block w-full bg-slate-800 hover:bg-punch-success text-white hover:text-slate-900 py-3 rounded font-bold transition-colors border border-slate-700 hover:border-punch-success text-center">
+                    View Details →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How to Stack Section -->
+    <section class="py-20 bg-slate-950 border-y border-slate-900">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 text-center">Sample Routines</h2>
+            <p class="text-lg text-slate-400 mb-12 text-center max-w-2xl mx-auto">
+                Supplements aren't one-size-fits-all. Here's how developers use punchDev stacks:
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-white mb-4 font-mono">The Baseline Protocol</h3>
+                    <ul class="space-y-3 text-slate-300 text-sm">
+                        <li class="flex items-start gap-2">
+                            <span class="text-punch-accent font-mono">AM:</span>
+                            <span><span class="font-mono text-punch-accent">localhost:3000</span> with breakfast (daily foundation)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-punch-primary font-mono">As needed:</span>
+                            <span><span class="font-mono text-punch-primary">git push --force</span> for deep work</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-punch-success font-mono">PM:</span>
+                            <span><span class="font-mono text-punch-success">nightly build</span> 30 min before bed</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-white mb-4 font-mono">The On-Call Stack</h3>
+                    <ul class="space-y-3 text-slate-300 text-sm">
+                        <li class="flex items-start gap-2">
+                            <span class="text-punch-accent font-mono">AM:</span>
+                            <span><span class="font-mono text-punch-accent">localhost:3000</span> + <span class="font-mono text-punch-primary">git push</span> (if under deadline)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-rose-500 font-mono">Mid-day:</span>
+                            <span><span class="font-mono text-rose-500">merge conflict</span> to manage cortisol spikes</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-punch-success font-mono">PM:</span>
+                            <span><span class="font-mono text-punch-success">nightly build</span> for recovery</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-white mb-4 font-mono">The Minimalist</h3>
+                    <ul class="space-y-3 text-slate-300 text-sm">
+                        <li class="flex items-start gap-2">
+                            <span class="text-punch-accent font-mono">Daily:</span>
+                            <span><span class="font-mono text-punch-accent">localhost:3000</span> only</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-slate-500 font-mono">Add:</span>
+                            <span>Other stacks as needed during crunch time</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="text-sm text-slate-500 mt-8 text-center italic">
+                All products can be taken together safely. Start with localhost:3000 for 30 days to fix baseline nutrition before adding nootropics.
+            </p>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 text-center">
+            Why Not Just Drink Coffee and Take a Centrum?
+        </h2>
+        <p class="text-lg text-slate-400 mb-12 text-center max-w-3xl mx-auto">
+            We don't hide behind "proprietary blends." Every ingredient, every dose, every mechanism is transparent. Because you debug code for a living—you deserve to understand what you're putting in your body.
+        </p>
+
+        <div class="overflow-x-auto">
+            <table class="w-full bg-slate-900 border border-slate-800 rounded-xl">
+                <thead>
+                    <tr class="border-b border-slate-800">
+                        <th class="px-6 py-4 text-left text-slate-400 font-mono text-sm">Generic Approach</th>
+                        <th class="px-6 py-4 text-left text-punch-primary font-mono text-sm">punchDev Approach</th>
+                    </tr>
+                </thead>
+                <tbody class="text-sm text-slate-300">
+                    <tr class="border-b border-slate-800">
+                        <td class="px-6 py-4">Coffee (jitters, crash, tolerance)</td>
+                        <td class="px-6 py-4 text-white">Caffeine + L-theanine (smooth, sustained, synergistic)</td>
+                    </tr>
+                    <tr class="border-b border-slate-800">
+                        <td class="px-6 py-4">Multivitamin (400 IU D3, magnesium oxide)</td>
+                        <td class="px-6 py-4 text-white">5000 IU D3, magnesium glycinate (effective doses, absorbable forms)</td>
+                    </tr>
+                    <tr class="border-b border-slate-800">
+                        <td class="px-6 py-4">Energy drinks (mystery ingredients, sugar)</td>
+                        <td class="px-6 py-4 text-white">Transparent dosing, no proprietary blends, evidence-based</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4">Melatonin (pineal suppression, grogginess)</td>
+                        <td class="px-6 py-4 text-white">Tart cherry + glycine (supports natural production)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-slate-950 border-y border-slate-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 text-center">Frequently Asked Questions</h2>
+
+            <div class="space-y-4">
+                <details class="bg-slate-900 border border-slate-800 rounded-xl p-6 group">
+                    <summary class="font-bold text-white cursor-pointer flex items-center justify-between">
+                        Can I stack multiple products?
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="mt-3 text-slate-400 text-sm">
+                        Yes. All products are designed to work together. localhost:3000 is infrastructure (take daily). git push is for acute focus. merge conflict manages stress. nightly build for sleep. Start with one and add as needed.
+                    </p>
+                </details>
+
+                <details class="bg-slate-900 border border-slate-800 rounded-xl p-6 group">
+                    <summary class="font-bold text-white cursor-pointer flex items-center justify-between">
+                        Do these contain stimulants?
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="mt-3 text-slate-400 text-sm">
+                        Only git push --force contains caffeine (200mg). localhost:3000, merge conflict, and nightly build are stimulant-free.
+                    </p>
+                </details>
+
+                <details class="bg-slate-900 border border-slate-800 rounded-xl p-6 group">
+                    <summary class="font-bold text-white cursor-pointer flex items-center justify-between">
+                        Is this third-party tested?
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="mt-3 text-slate-400 text-sm">
+                        Yes. Every batch is tested for purity, heavy metals, and label accuracy by independent labs. Certificates of Analysis available on request.
+                    </p>
+                </details>
+
+                <details class="bg-slate-900 border border-slate-800 rounded-xl p-6 group">
+                    <summary class="font-bold text-white cursor-pointer flex items-center justify-between">
+                        Will this make me a 10x developer?
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="mt-3 text-slate-400 text-sm">
+                        No. 10x developers aren't born. They're optimized. These supplements address nutritional deficits that impair cognitive function. Fix your wetware, ship faster.
+                    </p>
+                </details>
+
+                <details class="bg-slate-900 border border-slate-800 rounded-xl p-6 group">
+                    <summary class="font-bold text-white cursor-pointer flex items-center justify-between">
+                        What if I'm already taking other supplements?
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="mt-3 text-slate-400 text-sm">
+                        Check for ingredient overlap (especially caffeine and magnesium). If you're taking a multivitamin, you may not need localhost:3000. If you're on prescription medications, consult your doctor.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <div class="py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+            Ship Code. Not Crashes.
+        </h2>
+        <p class="text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
+            Modular supplements for developers who treat their biology like production infrastructure.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="git-push.html" class="inline-flex items-center gap-2 bg-punch-primary hover:bg-indigo-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-[0_0_20px_rgba(99,102,241,0.3)] hover:shadow-[0_0_30px_rgba(99,102,241,0.5)]">
+                Browse All Products
+            </a>
+            <a href="science.html" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700 px-8 py-4 rounded-lg font-mono text-sm transition-all">
+                Read the Science
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center gap-2 mb-4 md:mb-0">
+                <i data-lucide="terminal" class="text-slate-600 h-6 w-6"></i>
+                <span class="font-bold text-slate-500 text-xl tracking-tight">punch<span class="text-slate-600">Dev</span></span>
+            </div>
+
+            <div class="flex space-x-6 text-sm text-slate-500 font-mono">
+                <a href="terms.html" class="hover:text-punch-primary">Terms</a>
+                <a href="privacy.html" class="hover:text-punch-primary">Privacy</a>
+                <a href="shipping.html" class="hover:text-punch-primary">Shipping</a>
+                <a href="faq.html" class="hover:text-punch-primary">FAQ</a>
+            </div>
+
+            <div class="mt-4 md:mt-0 text-slate-600 text-sm">
+                &copy; 2026 punchDev Labs. All systems operational.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | punchDev</title>
+    <meta name="description" content="How punchDev collects, uses, and protects your personal information. Our commitment to your privacy and data security.">
+    <link rel="canonical" href="https://punchdev.com/privacy.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Privacy Policy | punchDev">
+    <meta property="og:description" content="How punchDev collects, uses, and protects your personal information.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://punchdev.com/privacy.html">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Privacy Policy | punchDev">
+    <meta name="twitter:description" content="How punchDev collects, uses, and protects your personal information.">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Privacy Policy",
+      "description": "How punchDev collects, uses, and protects your personal information.",
+      "url": "https://punchdev.com/privacy.html",
+      "isPartOf": {
+        "@type": "Website",
+        "@id": "https://punchdev.com/"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://punchdev.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Privacy Policy",
+          "item": "https://punchdev.com/privacy.html"
+        }
+      ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        punch: {
+                            bg: '#020617',
+                            card: '#0f172a',
+                            border: '#1e293b',
+                            primary: '#6366f1',
+                            accent: '#d946ef',
+                            success: '#34d399',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+
+        .scanline {
+            width: 100%;
+            height: 100px;
+            z-index: 10;
+            background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(99, 102, 241, 0.03) 50%, rgba(0,0,0,0) 100%);
+            opacity: 0.1;
+            position: absolute;
+            bottom: 100%;
+            animation: scanline 10s linear infinite;
+            pointer-events: none;
+        }
+        @keyframes scanline {
+            0% { bottom: 100%; }
+            100% { bottom: -100px; }
+        }
+
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .legal-content h2 {
+            @apply text-2xl font-bold text-white mt-8 mb-4 font-mono;
+        }
+
+        .legal-content h3 {
+            @apply text-lg font-semibold text-slate-100 mt-6 mb-2;
+        }
+
+        .legal-content p {
+            @apply text-slate-300 mb-4 leading-relaxed;
+        }
+
+        .legal-content ul, .legal-content ol {
+            @apply text-slate-300 mb-4 ml-6 space-y-2;
+        }
+
+        .legal-content li {
+            @apply leading-relaxed;
+        }
+    </style>
+</head>
+<body class="bg-punch-bg text-slate-300 font-sans antialiased overflow-x-hidden relative">
+
+    <!-- Scanline Effect -->
+    <div class="fixed inset-0 pointer-events-none z-50 h-full w-full overflow-hidden">
+        <div class="scanline"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-40 top-0 border-b border-punch-border glass-panel">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="terminal" class="text-punch-accent h-6 w-6"></i>
+                    <a href="index.html" class="font-bold text-white text-xl tracking-tight hover:opacity-80 transition-opacity">punch<span class="text-punch-primary">Dev</span></a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8 font-mono text-sm">
+                        <a href="products.html" class="hover:text-punch-success transition-colors">./products</a>
+                        <a href="science.html" class="hover:text-punch-success transition-colors">./science</a>
+                        <a href="blog/index.html" class="hover:text-punch-success transition-colors">./blog</a>
+                        <a href="about.html" class="hover:text-punch-success transition-colors">./about</a>
+                    </div>
+                </div>
+                <div>
+                    <button class="bg-punch-primary/10 hover:bg-punch-primary/20 text-punch-primary border border-punch-primary/50 px-4 py-2 rounded font-mono text-sm transition-all hover:shadow-[0_0_15px_rgba(99,102,241,0.5)]">
+                        Init Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="relative pt-32 pb-20 sm:pt-40 sm:pb-24">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Breadcrumb -->
+            <div class="mb-8 flex items-center gap-2 text-sm text-slate-500 font-mono">
+                <a href="index.html" class="hover:text-punch-primary transition-colors">Home</a>
+                <span>/</span>
+                <span class="text-slate-400">Privacy Policy</span>
+            </div>
+
+            <!-- Header -->
+            <div class="mb-12">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 font-mono">
+                    Privacy <span class="text-transparent bg-clip-text bg-gradient-to-r from-punch-primary to-punch-accent">Policy</span>
+                </h1>
+                <p class="text-slate-400">Last updated: January 2026</p>
+            </div>
+
+            <!-- Content -->
+            <div class="legal-content prose prose-invert max-w-none">
+
+                <h2>Overview</h2>
+                <p>punchDev ("we," "us," or "our") operates punchdev.com. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and purchase our products.</p>
+                <p>We treat your data like production secrets—encrypted, secure, and handled with care.</p>
+
+                <h2>Information We Collect</h2>
+                <p>We collect information you provide directly and information collected automatically:</p>
+
+                <h3>Information You Provide</h3>
+                <ul>
+                    <li><strong>Account Information:</strong> Email address, name, password</li>
+                    <li><strong>Shipping Information:</strong> Mailing address, phone number</li>
+                    <li><strong>Payment Information:</strong> Credit card, billing address (processed securely by third-party payment processors)</li>
+                    <li><strong>Communications:</strong> Emails, messages, customer support inquiries</li>
+                    <li><strong>Optional Information:</strong> Preferences, feedback, testimonials</li>
+                </ul>
+
+                <h3>Information Collected Automatically</h3>
+                <ul>
+                    <li><strong>Device Information:</strong> Browser type, IP address, operating system</li>
+                    <li><strong>Usage Data:</strong> Pages visited, time spent, referral source</li>
+                    <li><strong>Cookies:</strong> See Cookies section below</li>
+                </ul>
+
+                <h2>How We Use Your Information</h2>
+                <p>We use collected information for:</p>
+                <ul>
+                    <li>Processing and fulfilling orders</li>
+                    <li>Sending order confirmations and shipping updates</li>
+                    <li>Managing customer service requests and support</li>
+                    <li>Sending promotional emails and marketing communications (with your consent)</li>
+                    <li>Improving website functionality and user experience</li>
+                    <li>Analyzing usage patterns and trends</li>
+                    <li>Fraud prevention and security</li>
+                    <li>Legal compliance and dispute resolution</li>
+                </ul>
+
+                <h2>Data Protection and Security</h2>
+                <p>We implement industry-standard security measures to protect your personal information, including:</p>
+                <ul>
+                    <li>SSL/TLS encryption for data in transit</li>
+                    <li>Secure password storage with encryption</li>
+                    <li>Limited employee access to personal data</li>
+                    <li>Regular security audits and updates</li>
+                </ul>
+                <p>While we strive to protect your information, no system is completely secure. We cannot guarantee absolute security of your data.</p>
+
+                <h2>Cookies and Tracking</h2>
+                <p>Our website uses cookies and similar tracking technologies to:</p>
+                <ul>
+                    <li>Maintain your session and remember preferences</li>
+                    <li>Provide personalized content</li>
+                    <li>Analyze website traffic and performance</li>
+                    <li>Deliver targeted advertising</li>
+                </ul>
+                <p>You can control cookies through your browser settings. Disabling cookies may affect website functionality.</p>
+
+                <h2>Third-Party Services</h2>
+                <p>We use third-party services that may access your information:</p>
+
+                <h3>Payment Processors</h3>
+                <p>Payment information is processed by secure payment gateways. We do not store full credit card details on our servers. Payment processors comply with PCI-DSS standards.</p>
+
+                <h3>Analytics</h3>
+                <p>We use analytics tools (e.g., Google Analytics) to understand site usage. These services may collect anonymized data about your activity.</p>
+
+                <h3>Email Marketing</h3>
+                <p>Email communications may be managed through third-party email service providers. You can unsubscribe from marketing emails at any time.</p>
+
+                <h3>Shipping Providers</h3>
+                <p>Shipping and fulfillment partners receive your address and contact information necessary for delivery.</p>
+
+                <h2>User Rights and Choices</h2>
+
+                <h3>Access Your Data</h3>
+                <p>You can request a copy of your personal information by contacting us. We will provide it within 30 days.</p>
+
+                <h3>Correct or Update Data</h3>
+                <p>You can update your account information by logging in and editing your profile, or by contacting us.</p>
+
+                <h3>Delete Your Account</h3>
+                <p>You can request deletion of your account and associated data. We will retain information as required by law or for legitimate business purposes.</p>
+
+                <h3>Opt-Out of Marketing</h3>
+                <p>You can unsubscribe from promotional emails by clicking the "unsubscribe" link in any email or by updating your preferences in your account.</p>
+
+                <h3>Do Not Track</h3>
+                <p>Some browsers include Do Not Track functionality. We do not currently respond to DNT signals, but honor user preferences where applicable.</p>
+
+                <h2>Privacy for Minors</h2>
+                <p>Our products are not intended for individuals under 18. We do not knowingly collect information from minors. If we become aware of information collected from a minor, we will delete it promptly.</p>
+
+                <h2>International Data Transfers</h2>
+                <p>Your information may be transferred to and stored in countries other than your residence. These countries may have data protection laws different from your home country. By using punchDev, you consent to such transfers.</p>
+
+                <h2>Data Retention</h2>
+                <p>We retain personal information for as long as necessary to provide our services and fulfill the purposes outlined in this policy. You can request deletion at any time, subject to legal retention requirements.</p>
+
+                <h2>Changes to This Policy</h2>
+                <p>We may update this Privacy Policy periodically. Changes become effective when posted. Your continued use of punchDev following any update constitutes your acceptance of the revised policy. We encourage you to review this page regularly.</p>
+
+                <h2>Contact Us</h2>
+                <p>If you have questions about this Privacy Policy or our data practices, contact us at:</p>
+                <p class="font-mono">
+                    privacy@punchdev.com<br>
+                    punchDev Labs<br>
+                    support.punchdev.com
+                </p>
+                <p>We respond to privacy requests within 30 days.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center gap-2 mb-4 md:mb-0">
+                <i data-lucide="terminal" class="text-slate-600 h-6 w-6"></i>
+                <span class="font-bold text-slate-500 text-xl tracking-tight">punch<span class="text-slate-600">Dev</span></span>
+            </div>
+
+            <div class="flex space-x-6 text-sm text-slate-500 font-mono">
+                <a href="terms.html" class="hover:text-punch-primary">Terms</a>
+                <a href="privacy.html" class="hover:text-punch-primary">Privacy</a>
+                <a href="shipping.html" class="hover:text-punch-primary">Shipping</a>
+                <a href="faq.html" class="hover:text-punch-primary">FAQ</a>
+            </div>
+
+            <div class="mt-4 md:mt-0 text-slate-600 text-sm">
+                &copy; 2026 punchDev Labs. All systems operational.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

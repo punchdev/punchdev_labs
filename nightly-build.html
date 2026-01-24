@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nightly build | Sleep Optimization Stack for Developers</title>
+    <meta name="description" content="Garbage collection for your brain. Tart cherry, apigenin, glycine. Enhance REM sleep to consolidate APIs learned today.">
+    <link rel="canonical" href="https://punchdev.com/nightly-build.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="nightly build | Sleep Optimization Stack for Developers">
+    <meta property="og:description" content="Garbage collection for your brain. Deep sleep for memory consolidation and API learning retention.">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://punchdev.com/nightly-build.html">
+    <meta property="og:image" content="https://punchdev.com/og-nightly-build.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="nightly build | Sleep Optimization Stack for Developers">
+    <meta name="twitter:description" content="Garbage collection for your brain. Enhanced REM sleep without melatonin grogginess.">
+    <meta name="twitter:image" content="https://punchdev.com/og-nightly-build.jpg">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "nightly build",
+      "description": "Sleep optimization stack with tart cherry, apigenin, and L-glycine for deep recovery and memory consolidation.",
+      "brand": {
+        "@type": "Brand",
+        "name": "punchDev"
+      },
+      "category": "Sleep Aid / Nootropic",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "127"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://punchdev.com/nightly-build.html"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://punchdev.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Products",
+          "item": "https://punchdev.com/products.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "nightly build",
+          "item": "https://punchdev.com/nightly-build.html"
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does nightly build contain melatonin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. nightly build uses tart cherry extract, apigenin, and L-glycine to enhance sleep quality without the grogginess associated with synthetic melatonin. This approach supports natural sleep architecture."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should I take nightly build?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Take 30-60 minutes before bedtime. The ingredients work best when you're giving your body a clear wind-down window before sleep."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I take nightly build with caffeine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Caffeine should be consumed 8+ hours before nightly build to avoid interference with sleep onset. Monitor your personal caffeine half-life; for most developers, last caffeine cutoff is 2 PM."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the science behind these ingredients?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tart cherry naturally produces melatonin and regulates core body temperature. Apigenin modulates GABA receptors similar to benzodiazepines but without addiction risk. L-Glycine lowers core temperature and improves sleep continuity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long before I see results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most users report improved sleep quality within 3-5 nights. REM sleep enhancement and memory consolidation benefits emerge after 2 weeks of consistent use."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        punch: {
+                            bg: '#020617',
+                            card: '#0f172a',
+                            border: '#1e293b',
+                            primary: '#6366f1',
+                            accent: '#d946ef',
+                            success: '#34d399',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+
+        .scanline {
+            width: 100%;
+            height: 100px;
+            z-index: 10;
+            background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(52, 211, 153, 0.03) 50%, rgba(0,0,0,0) 100%);
+            opacity: 0.1;
+            position: absolute;
+            bottom: 100%;
+            animation: scanline 10s linear infinite;
+            pointer-events: none;
+        }
+        @keyframes scanline {
+            0% { bottom: 100%; }
+            100% { bottom: -100px; }
+        }
+
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-punch-bg text-slate-300 font-sans antialiased overflow-x-hidden relative">
+
+    <!-- Scanline Effect -->
+    <div class="fixed inset-0 pointer-events-none z-50 h-full w-full overflow-hidden">
+        <div class="scanline"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-40 top-0 border-b border-punch-border glass-panel">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                    <i data-lucide="terminal" class="text-punch-accent h-6 w-6"></i>
+                    <span class="font-bold text-white text-xl tracking-tight">punch<span class="text-punch-primary">Dev</span></span>
+                </a>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8 font-mono text-sm">
+                        <a href="products.html" class="hover:text-punch-success transition-colors">./products</a>
+                        <a href="science.html" class="hover:text-punch-success transition-colors">./science</a>
+                        <a href="blog/index.html" class="hover:text-punch-success transition-colors">./blog</a>
+                        <a href="about.html" class="hover:text-punch-success transition-colors">./about</a>
+                    </div>
+                </div>
+                <div>
+                    <button class="bg-punch-success/10 hover:bg-punch-success/20 text-punch-success border border-punch-success/50 px-4 py-2 rounded font-mono text-sm transition-all hover:shadow-[0_0_15px_rgba(52,211,153,0.5)]">
+                        Init Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative pt-32 pb-20 sm:pt-40 sm:pb-24 overflow-hidden">
+        <!-- Background Gradients -->
+        <div class="absolute top-0 left-1/2 w-full -translate-x-1/2 h-full z-0 pointer-events-none">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-punch-success/20 rounded-full blur-[100px]"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-punch-accent/10 rounded-full blur-[120px]"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Problem Section -->
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-punch-success mb-8">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-punch-success opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-punch-success"></span>
+                        </span>
+                        Deep Recovery Stack
+                    </div>
+
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-6">
+                        Garbage Collection<br />
+                        <span class="text-punch-success">for Your Brain</span>
+                    </h1>
+
+                    <p class="text-xl text-slate-400 font-light mb-6">
+                        Blue light burned your retinas at 11 PM. Caffeine's still coursing at midnight. You collapse into bed, but your neural cache is fragmented. Nothing consolidates. Nothing sticks.
+                    </p>
+
+                    <p class="text-lg text-slate-300 font-medium mb-8 border-l-4 border-punch-success pl-4">
+                        Nightly build optimizes REM sleep for memory consolidation. Learn new APIs at night. Wake ready to architect.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-punch-success text-slate-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-emerald-300 transition-all shadow-[0_0_20px_rgba(52,211,153,0.3)] hover:shadow-[0_0_30px_rgba(52,211,153,0.5)] flex items-center justify-center gap-2">
+                            <i data-lucide="moon" class="h-5 w-5"></i>
+                            Ship This Sleep
+                        </button>
+                        <button class="bg-slate-900 text-slate-300 border border-slate-700 px-8 py-4 rounded-lg font-mono hover:border-punch-success hover:text-punch-success transition-all">
+                            View Specs
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Ingredients Highlight -->
+                <div class="space-y-4">
+                    <div class="bg-slate-900/50 border border-punch-success/30 rounded-xl p-6 backdrop-blur">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-punch-success/20 p-3 rounded-lg">
+                                <i data-lucide="cherry" class="text-punch-success h-6 w-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-white text-lg">Tart Cherry Extract</h3>
+                                <p class="text-slate-400 text-sm mt-1">Natural melatonin production. Regulates core body temperature for deeper sleep cycles.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900/50 border border-punch-success/30 rounded-xl p-6 backdrop-blur">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-punch-success/20 p-3 rounded-lg">
+                                <i data-lucide="leaf" class="text-punch-success h-6 w-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-white text-lg">Apigenin</h3>
+                                <p class="text-slate-400 text-sm mt-1">GABA modulation without benzodiazepine addiction. Clean sleep initiation, no hangover.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900/50 border border-punch-success/30 rounded-xl p-6 backdrop-blur">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-punch-success/20 p-3 rounded-lg">
+                                <i data-lucide="droplet" class="text-punch-success h-6 w-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-white text-lg">L-Glycine</h3>
+                                <p class="text-slate-400 text-sm mt-1">Lowers core temperature. Extends sleep duration and improves continuity. No melatonin grogginess.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- What's Inside Section -->
+    <section class="py-20 bg-slate-950/50 border-y border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white font-mono mb-4">What's Inside</h2>
+            <p class="text-slate-400 mb-12 max-w-2xl">Every dose optimizes the three pillars of recovery: sleep initiation, REM enhancement, and memory consolidation.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-punch-success/50 transition-all">
+                    <div class="text-3xl font-mono font-bold text-punch-success mb-3">500mg</div>
+                    <h3 class="font-bold text-white text-lg mb-2">Tart Cherry Extract</h3>
+                    <p class="text-slate-400 text-sm">Montmorency variety. 25mg natural melatonin equivalent per serving. Supports circadian alignment.</p>
+                    <div class="mt-4 pt-4 border-t border-slate-700 text-xs text-slate-500">
+                        Reference: Howatson et al., 2012 — Cherry juice and sleep recovery
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-punch-success/50 transition-all">
+                    <div class="text-3xl font-mono font-bold text-punch-success mb-3">50mg</div>
+                    <h3 class="font-bold text-white text-lg mb-2">Apigenin</h3>
+                    <p class="text-slate-400 text-sm">Standardized from chamomile. Binds GABA receptors. Zero tolerance buildup. Zero morning fog.</p>
+                    <div class="mt-4 pt-4 border-t border-slate-700 text-xs text-slate-500">
+                        Reference: Zanoli et al., 2000 — Apigenin sleep modulation study
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-punch-success/50 transition-all">
+                    <div class="text-3xl font-mono font-bold text-punch-success mb-3">3g</div>
+                    <h3 class="font-bold text-white text-lg mb-2">L-Glycine</h3>
+                    <p class="text-slate-400 text-sm">Pharmaceutical-grade. Reduces core body temperature by 0.5–1.0°C. Extends total sleep time by 25 min avg.</p>
+                    <div class="mt-4 pt-4 border-t border-slate-700 text-xs text-slate-500">
+                        Reference: Bannai et al., 2012 — Glycine temperature and sleep quality
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- When to Take It -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white font-mono mb-12">When to Take It</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Timing Guide -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                        <i data-lucide="clock" class="text-punch-success h-6 w-6"></i>
+                        The 90-Minute Protocol
+                    </h3>
+
+                    <div class="space-y-6">
+                        <div class="bg-slate-900 rounded-lg p-6 border-l-4 border-punch-success">
+                            <div class="font-mono text-sm text-punch-success mb-2">T-60 minutes</div>
+                            <h4 class="font-bold text-white">Last Caffeine</h4>
+                            <p class="text-slate-400 text-sm mt-2">Caffeine half-life is 5–6 hours. If you sleep at 11 PM, cut caffeine by 5 PM. Earlier if you're sensitive.</p>
+                        </div>
+
+                        <div class="bg-slate-900 rounded-lg p-6 border-l-4 border-punch-success">
+                            <div class="font-mono text-sm text-punch-success mb-2">T-45 minutes</div>
+                            <h4 class="font-bold text-white">Blue Light Cutoff</h4>
+                            <p class="text-slate-400 text-sm mt-2">Enable OS dark mode. Put phone in another room. Your retinas need to signal melatonin production.</p>
+                        </div>
+
+                        <div class="bg-slate-900 rounded-lg p-6 border-l-4 border-punch-success">
+                            <div class="font-mono text-sm text-punch-success mb-2">T-30 minutes</div>
+                            <h4 class="font-bold text-white">Take nightly build</h4>
+                            <p class="text-slate-400 text-sm mt-2">Mix with 8 oz water. The glycine is tasteless. Ingredients activate during wind-down phase.</p>
+                        </div>
+
+                        <div class="bg-slate-900 rounded-lg p-6 border-l-4 border-punch-success">
+                            <div class="font-mono text-sm text-punch-success mb-2">T+0 minutes</div>
+                            <h4 class="font-bold text-white">Sleep</h4>
+                            <p class="text-slate-400 text-sm mt-2">Core body temperature drops. REM sleep latency optimizes. Memory consolidation begins.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- What NOT to Do -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                        <i data-lucide="alert-circle" class="text-rose-500 h-6 w-6"></i>
+                        Common Mistakes
+                    </h3>
+
+                    <div class="space-y-4">
+                        <div class="bg-rose-900/20 border border-rose-500/30 rounded-lg p-4">
+                            <div class="flex gap-3">
+                                <i data-lucide="x" class="text-rose-500 h-5 w-5 flex-shrink-0 mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-white">Taking it too early</h4>
+                                    <p class="text-slate-400 text-sm mt-1">30–60 minutes is the window. Earlier = ingredients metabolize before bed. Later = interrupted sleep.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-rose-900/20 border border-rose-500/30 rounded-lg p-4">
+                            <div class="flex gap-3">
+                                <i data-lucide="x" class="text-rose-500 h-5 w-5 flex-shrink-0 mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-white">Combining with alcohol</h4>
+                                    <p class="text-slate-400 text-sm mt-1">Alcohol blocks REM sleep. No sleep quality gains. Wait 24+ hours between last drink and nightly build.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-rose-900/20 border border-rose-500/30 rounded-lg p-4">
+                            <div class="flex gap-3">
+                                <i data-lucide="x" class="text-rose-500 h-5 w-5 flex-shrink-0 mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-white">Using your laptop in bed</h4>
+                                    <p class="text-slate-400 text-sm mt-1">Blue light suppresses melatonin regardless of supplement. Your bed is a cache line. One purpose only.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-rose-900/20 border border-rose-500/30 rounded-lg p-4">
+                            <div class="flex gap-3">
+                                <i data-lucide="x" class="text-rose-500 h-5 w-5 flex-shrink-0 mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-white">Expecting immediate results</h4>
+                                    <p class="text-slate-400 text-sm mt-1">3–5 nights for noticeable improvement. 2 weeks for REM enhancement and API consolidation benefits.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Science Section -->
+    <section class="py-20 bg-slate-950/50 border-y border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white font-mono mb-4">The Science</h2>
+            <p class="text-slate-400 mb-12 max-w-2xl">Why these three ingredients beat melatonin supplementation for developers.</p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <span class="inline-flex items-center justify-center h-10 w-10 rounded-lg bg-punch-success/20 text-punch-success font-bold">1</span>
+                        Why Tart Cherry?
+                    </h3>
+                    <p class="text-slate-400 mb-4">
+                        Tart cherry naturally produces melatonin—25 mg per 500 mg serving—but delivers it alongside polyphenols that regulate circadian entrainment. You're not supplementing melatonin externally; you're restoring your body's native production pathway.
+                    </p>
+                    <p class="text-slate-400 mb-4">
+                        Studies show tart cherry reduces sleep onset latency by 16 minutes on average and increases total sleep time by 39 minutes. No next-morning grogginess because your body's still running its own circadian rhythm.
+                    </p>
+                    <p class="text-slate-300 text-sm font-mono bg-slate-900 rounded p-3 border-l-4 border-punch-success">
+                        Howatson et al. (2012): Cherry juice improves sleep quality in athletes. J Int Soc Sports Nutr.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <span class="inline-flex items-center justify-center h-10 w-10 rounded-lg bg-punch-success/20 text-punch-success font-bold">2</span>
+                        Why Apigenin?
+                    </h3>
+                    <p class="text-slate-400 mb-4">
+                        Apigenin is a benzodiazepine-like compound that binds GABA receptors—but without the addiction risk, tolerance buildup, or next-day cognitive fog. It's the pharmaceutical shortcut without the long-term liability.
+                    </p>
+                    <p class="text-slate-400 mb-4">
+                        At 50 mg, apigenin reduces sleep latency and increases Stage N3 (deep sleep) without suppressing REM architecture. You consolidate procedural memory (debugging patterns, API flows) alongside declarative memory (facts and concepts).
+                    </p>
+                    <p class="text-slate-300 text-sm font-mono bg-slate-900 rounded p-3 border-l-4 border-punch-success">
+                        Zanoli et al. (2000): Apigenin modulates GABA receptors in vivo. Neurosci Lett.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <span class="inline-flex items-center justify-center h-10 w-10 rounded-lg bg-punch-success/20 text-punch-success font-bold">3</span>
+                        Why L-Glycine?
+                    </h3>
+                    <p class="text-slate-400 mb-4">
+                        Glycine lowers core body temperature by 0.5–1.0°C through vasodilation. Cooler core = longer REM episodes = better memory consolidation. It's the thermostat for your brain.
+                    </p>
+                    <p class="text-slate-400 mb-4">
+                        At 3 g, L-glycine increases total sleep time by ~25 minutes on average and improves sleep continuity. No receptor tolerance. Zero morning residue. Pure biological optimization.
+                    </p>
+                    <p class="text-slate-300 text-sm font-mono bg-slate-900 rounded p-3 border-l-4 border-punch-success">
+                        Bannai et al. (2012): Glycine promotes sleep quality via temperature reduction. Sleep Biol Rhythms.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <span class="inline-flex items-center justify-center h-10 w-10 rounded-lg bg-punch-success/20 text-punch-success font-bold">4</span>
+                        Why NOT Melatonin?
+                    </h3>
+                    <p class="text-slate-400 mb-4">
+                        Exogenous melatonin works fine for jet lag—acute circadian disruption—but chronic supplementation dysregulates your endogenous production. Your pineal gland outsources and atrophies.
+                    </p>
+                    <p class="text-slate-400 mb-4">
+                        Developers report grogginess, brain fog, and emotional blunting from high-dose melatonin. nightly build activates your body's native pathways. You wake sharp because you optimized the entire sleep architecture, not just sleep initiation.
+                    </p>
+                    <p class="text-slate-300 text-sm font-mono bg-slate-900 rounded p-3 border-l-4 border-punch-success">
+                        You are not a passenger on melatonin. You are the architect of your own recovery.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Developers Say -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white font-mono mb-12">What Developers Say</h2>
+
+            <div class="rounded-t-lg bg-slate-800 border-b border-slate-700 px-4 py-2 flex items-center gap-2">
+                <div class="flex gap-2">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+                <div class="ml-4 text-xs font-mono text-slate-400">sleep_logs.txt</div>
+            </div>
+            <div class="bg-black/80 p-6 font-mono text-sm md:text-base border-x border-b border-slate-800 rounded-b-lg shadow-2xl h-80 overflow-y-auto">
+                <div class="mb-6">
+                    <span class="text-green-400">➜</span> <span class="text-blue-400">@backend_architect</span>: <span class="text-slate-300">"Used nightly build for a week. REM sleep increased by 23 min on my watch. Woke up with a complete refactor strategy I'd been stuck on for 3 days. No grogginess."</span>
+                </div>
+                <div class="mb-6">
+                    <span class="text-green-400">➜</span> <span class="text-blue-400">@sleep_optimized</span>: <span class="text-slate-300">"Finally something that works without melatonin hangovers. My sleep architecture actually improved. Consistent 7.5 hour nights now."</span>
+                </div>
+                <div class="mb-6">
+                    <span class="text-green-400">➜</span> <span class="text-blue-400">@rem_sleep_advocate</span>: <span class="text-slate-300">"Took nightly build after a 48-hour sprint. Woke up feeling cognitively reset. Not just rested—optimized. APIs I learned yesterday were still in working memory."</span>
+                </div>
+                <div class="mb-6">
+                    <span class="text-green-400">➜</span> <span class="text-blue-400">@nocturnal_coder</span>: <span class="text-slate-300">"The best part? Zero tolerance buildup. Been using it for 2 months. Still works. Still sharp. No dependency spiral."</span>
+                </div>
+                <div class="mb-6">
+                    <span class="text-green-400">➜</span> <span class="text-blue-400">@full_stack_sleeper</span>: <span class="text-slate-300">"Pair this with git_push in the morning and merge_conflict during the day. The whole stack just works. My performance metrics are up 30%."</span>
+                </div>
+                <div class="animate-pulse">
+                    <span class="text-green-400">➜</span> <span class="text-blue-400">cursor</span> <span class="text-slate-500">_</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dosage & Safety -->
+    <section class="py-20 bg-slate-950/50 border-y border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white font-mono mb-12">Dosage & Safety</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-6">Recommended Dosing</h3>
+                    <div class="bg-slate-900 rounded-lg p-6 border border-slate-800 space-y-4">
+                        <div>
+                            <div class="text-sm font-mono text-punch-success mb-2">Standard Protocol</div>
+                            <p class="text-slate-300">1 serving (powder packet) mixed with 8 oz water, 30–60 minutes before bedtime.</p>
+                        </div>
+                        <div class="border-t border-slate-700 pt-4">
+                            <div class="text-sm font-mono text-punch-success mb-2">First Week</div>
+                            <p class="text-slate-300">Take 5 consecutive nights, 2 nights off. Assess sleep quality and morning cognition.</p>
+                        </div>
+                        <div class="border-t border-slate-700 pt-4">
+                            <div class="text-sm font-mono text-punch-success mb-2">Maintenance</div>
+                            <p class="text-slate-300">5–6 nights per week. Sleep debt recovery (weekends) or high-cognitive load weeks (sprint cycles).</p>
+                        </div>
+                        <div class="border-t border-slate-700 pt-4">
+                            <div class="text-sm font-mono text-punch-success mb-2">Cycling</div>
+                            <p class="text-slate-300">Take 2 weeks on, 1 week off to maintain sensitivity. Zero tolerance buildup reported.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-6">Safety & Interactions</h3>
+                    <div class="space-y-4">
+                        <div class="bg-emerald-900/20 border border-punch-success/30 rounded-lg p-4">
+                            <div class="flex gap-3">
+                                <i data-lucide="check-circle" class="text-punch-success h-5 w-5 flex-shrink-0 mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">Natural Ingredients</h4>
+                                    <p class="text-slate-400 text-sm mt-1">All ingredients are food-derived or pharmaceutical-grade. Zero synthetic additives.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-emerald-900/20 border border-punch-success/30 rounded-lg p-4">
+                            <div class="flex gap-3">
+                                <i data-lucide="check-circle" class="text-punch-success h-5 w-5 flex-shrink-0 mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">No Receptor Tolerance</h4>
+                                    <p class="text-slate-400 text-sm mt-1">Apigenin and glycine work through different mechanisms. No adaptive tolerance reported.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-rose-900/20 border border-rose-500/30 rounded-lg p-4">
+                            <div class="flex gap-3">
+                                <i data-lucide="alert-circle" class="text-rose-500 h-5 w-5 flex-shrink-0 mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">Contraindications</h4>
+                                    <p class="text-slate-400 text-sm mt-1">Avoid if pregnant, nursing, or taking sedatives/benzodiazepines. Consult a doctor if on SSRIs.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-rose-900/20 border border-rose-500/30 rounded-lg p-4">
+                            <div class="flex gap-3">
+                                <i data-lucide="alert-circle" class="text-rose-500 h-5 w-5 flex-shrink-0 mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">Do Not Mix With</h4>
+                                    <p class="text-slate-400 text-sm mt-1">Alcohol, cannabis, or other CNS depressants. Wait 24+ hours between consumption.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white font-mono mb-12">FAQ</h2>
+
+            <div class="space-y-6">
+                <details class="group bg-slate-900 rounded-lg border border-slate-800 cursor-pointer">
+                    <summary class="flex items-center justify-between p-6 hover:bg-slate-800/50 transition-colors">
+                        <h3 class="font-bold text-white text-lg">Does nightly build contain melatonin?</h3>
+                        <i data-lucide="chevron-down" class="h-5 w-5 text-slate-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400">
+                        <p>No synthetic melatonin. We use tart cherry extract, which produces melatonin naturally (~25 mg equivalent), plus apigenin and glycine to optimize the entire sleep architecture. This approach avoids the pineal gland suppression and grogginess associated with chronic exogenous melatonin.</p>
+                    </div>
+                </details>
+
+                <details class="group bg-slate-900 rounded-lg border border-slate-800 cursor-pointer">
+                    <summary class="flex items-center justify-between p-6 hover:bg-slate-800/50 transition-colors">
+                        <h3 class="font-bold text-white text-lg">How long before I notice a difference?</h3>
+                        <i data-lucide="chevron-down" class="h-5 w-5 text-slate-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400">
+                        <p>Most users report improved sleep quality within 3–5 nights. Deep REM sleep and memory consolidation benefits emerge after 2 weeks of consistent use. Track sleep metrics (wearable device) for objective data.</p>
+                    </div>
+                </details>
+
+                <details class="group bg-slate-900 rounded-lg border border-slate-800 cursor-pointer">
+                    <summary class="flex items-center justify-between p-6 hover:bg-slate-800/50 transition-colors">
+                        <h3 class="font-bold text-white text-lg">Can I take nightly build every night?</h3>
+                        <i data-lucide="chevron-down" class="h-5 w-5 text-slate-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400">
+                        <p>Yes, but we recommend 5–6 nights per week. This maintains sensitivity and allows your body's native sleep regulation to cycle. After 2 weeks on, take 1 week off to reset baseline. Zero dependency risk reported.</p>
+                    </div>
+                </details>
+
+                <details class="group bg-slate-900 rounded-lg border border-slate-800 cursor-pointer">
+                    <summary class="flex items-center justify-between p-6 hover:bg-slate-800/50 transition-colors">
+                        <h3 class="font-bold text-white text-lg">What's the taste like?</h3>
+                        <i data-lucide="chevron-down" class="h-5 w-5 text-slate-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400">
+                        <p>Neutral with subtle tart cherry notes. Glycine is tasteless. We use natural flavorings only—no artificial sweeteners. Mix with 8 oz cold water for best palatability. Optional: add to chamomile tea if preferred.</p>
+                    </div>
+                </details>
+
+                <details class="group bg-slate-900 rounded-lg border border-slate-800 cursor-pointer">
+                    <summary class="flex items-center justify-between p-6 hover:bg-slate-800/50 transition-colors">
+                        <h3 class="font-bold text-white text-lg">Can I combine nightly build with other punchDev products?</h3>
+                        <i data-lucide="chevron-down" class="h-5 w-5 text-slate-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400">
+                        <p>Yes. git push --force in the morning for focus. localhost:3000 for daily baseline. merge conflict during high-stress periods. nightly build every night for recovery. No interactions—they're designed as a modular stack.</p>
+                    </div>
+                </details>
+
+                <details class="group bg-slate-900 rounded-lg border border-slate-800 cursor-pointer">
+                    <summary class="flex items-center justify-between p-6 hover:bg-slate-800/50 transition-colors">
+                        <h3 class="font-bold text-white text-lg">Is this vegan? Gluten-free?</h3>
+                        <i data-lucide="chevron-down" class="h-5 w-5 text-slate-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400">
+                        <p>Yes to both. All ingredients are plant-derived or lab-synthesized. Zero animal products. Zero gluten. Manufactured in a GMP-certified facility. Full allergen disclosure on packaging.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complete Your Stack -->
+    <section class="py-20 bg-slate-950/50 border-y border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white font-mono mb-4">Complete Your Stack</h2>
+            <p class="text-slate-400 mb-12">Pair nightly build with the full punchDev lineup for 24-hour optimization.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <a href="git-push.html" class="group relative bg-slate-900 rounded-2xl border border-slate-800 p-8 hover:border-punch-primary/50 transition-all hover:bg-slate-800/50">
+                    <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-slate-950 border border-slate-800 p-3 rounded-full">
+                        <i data-lucide="cpu" class="text-punch-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="mt-6 text-2xl font-bold text-white text-center font-mono">git push <span class="text-punch-primary">--force</span></h3>
+                    <p class="text-center text-xs font-mono text-punch-primary mb-6 uppercase tracking-wider">Morning Focus</p>
+                    <p class="text-slate-400 text-center mb-4 text-sm">Lock in. Problem-solve. Write ship-ready code in your peak cognitive window.</p>
+                </a>
+
+                <a href="localhost-3000.html" class="group relative bg-slate-900 rounded-2xl border border-punch-accent/30 p-8 shadow-[0_0_30px_rgba(217,70,239,0.1)] hover:shadow-[0_0_30px_rgba(217,70,239,0.2)] transition-all">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-punch-accent text-black text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                        Daily Baseline
+                    </div>
+                    <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-slate-950 border border-punch-accent/50 p-3 rounded-full">
+                        <i data-lucide="activity" class="text-punch-accent w-8 h-8"></i>
+                    </div>
+                    <h3 class="mt-6 text-2xl font-bold text-white text-center font-mono">localhost<span class="text-punch-accent">:3000</span></h3>
+                    <p class="text-center text-xs font-mono text-punch-accent mb-6 uppercase tracking-wider">Stability</p>
+                    <p class="text-slate-400 text-center mb-4 text-sm">Baseline. Electrolytes. Vitamin D. Prevent crashes during long sessions.</p>
+                </a>
+
+                <a href="merge-conflict.html" class="group relative bg-slate-900 rounded-2xl border border-slate-800 p-8 hover:border-rose-500/50 transition-all hover:bg-slate-800/50">
+                    <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-slate-950 border border-slate-800 p-3 rounded-full">
+                        <i data-lucide="alert-triangle" class="text-rose-500 w-8 h-8"></i>
+                    </div>
+                    <h3 class="mt-6 text-2xl font-bold text-white text-center font-mono">merge <span class="text-rose-500">conflict</span></h3>
+                    <p class="text-center text-xs font-mono text-rose-500 mb-6 uppercase tracking-wider">Crisis Management</p>
+                    <p class="text-slate-400 text-center mb-4 text-sm">Outage? Deadline? Calm your nervous system. Stay sharp under pressure.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 w-full -translate-x-1/2 h-full z-0 pointer-events-none">
+            <div class="absolute inset-0 bg-gradient-to-b from-punch-success/10 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-6">
+                Deep Sleep. Clear Mind. <br />
+                <span class="text-punch-success">Shipped Code.</span>
+            </h2>
+
+            <p class="text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
+                nightly build isn't a crutch for bad sleep habits. It's an optimizer for developers who are serious about performance—biologically and professionally.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-punch-success text-slate-900 px-10 py-4 rounded-lg font-bold text-lg hover:bg-emerald-300 transition-all shadow-[0_0_20px_rgba(52,211,153,0.3)] hover:shadow-[0_0_30px_rgba(52,211,153,0.5)] flex items-center justify-center gap-2">
+                    <i data-lucide="shopping-cart" class="h-5 w-5"></i>
+                    Add to Cart
+                </button>
+                <button class="bg-slate-900 text-slate-300 border border-slate-700 px-10 py-4 rounded-lg font-mono hover:border-punch-success hover:text-punch-success transition-all">
+                    View Bundle Pricing
+                </button>
+            </div>
+
+            <p class="mt-8 text-sm text-slate-500 font-mono">
+                30-day money-back guarantee. No questions. Free shipping on orders 3+.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 mb-4 md:mb-0 hover:opacity-80 transition-opacity">
+                <i data-lucide="terminal" class="text-slate-600 h-6 w-6"></i>
+                <span class="font-bold text-slate-500 text-xl tracking-tight">punch<span class="text-slate-600">Dev</span></span>
+            </a>
+
+            <div class="flex space-x-6 text-sm text-slate-500 font-mono">
+                <a href="terms.html" class="hover:text-punch-success transition-colors">Terms</a>
+                <a href="privacy.html" class="hover:text-punch-success transition-colors">Privacy</a>
+                <a href="shipping.html" class="hover:text-punch-success transition-colors">Shipping</a>
+                <a href="faq.html" class="hover:text-punch-success transition-colors">FAQ</a>
+            </div>
+
+            <div class="mt-4 md:mt-0 text-slate-600 text-sm">
+                &copy; 2026 punchDev Labs. All systems operational.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

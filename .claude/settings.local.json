@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(copywriting)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd SEO-optimized pages: homepage updates + 10 product/core pages\n\nPhase 1 & 2 Complete:\n- Updated index.html with SEO meta tags, Schema.org markup, 4th product card \\(merge conflict\\)\n- Created 4 product detail pages \\(git-push, localhost-3000, merge-conflict, nightly-build\\)\n- Created products hub page with modular stack positioning\n- Created science page with peer-reviewed research bibliography\n- Created about page with origin story and developer-centric values\n- Created legal pages \\(terms, privacy, shipping\\)\n\nAll pages include:\n- Complete SEO meta tags \\(title, description, canonical, OG, Twitter Card\\)\n- Schema.org JSON-LD markup \\(Product, FAQPage, Breadcrumb, Organization\\)\n- Brand voice: Senior Principal Engineer + Bio-Hacker tone\n- Internal linking strategy\n- Responsive design with punchDev dark-mode aesthetic\n\nTotal: 11 pages, ~11,000 words, keyword-optimized for developer supplements niche\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}

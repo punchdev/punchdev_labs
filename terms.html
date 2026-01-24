@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | punchDev</title>
+    <meta name="description" content="punchDev terms of service and conditions of use. Review our legal terms before purchasing supplements.">
+    <link rel="canonical" href="https://punchdev.com/terms.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Terms of Service | punchDev">
+    <meta property="og:description" content="punchDev terms of service and conditions of use.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://punchdev.com/terms.html">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Terms of Service | punchDev">
+    <meta name="twitter:description" content="punchDev terms of service and conditions of use.">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Terms of Service",
+      "description": "punchDev terms of service and conditions of use.",
+      "url": "https://punchdev.com/terms.html",
+      "isPartOf": {
+        "@type": "Website",
+        "@id": "https://punchdev.com/"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://punchdev.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Terms of Service",
+          "item": "https://punchdev.com/terms.html"
+        }
+      ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        punch: {
+                            bg: '#020617',
+                            card: '#0f172a',
+                            border: '#1e293b',
+                            primary: '#6366f1',
+                            accent: '#d946ef',
+                            success: '#34d399',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+
+        .scanline {
+            width: 100%;
+            height: 100px;
+            z-index: 10;
+            background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(99, 102, 241, 0.03) 50%, rgba(0,0,0,0) 100%);
+            opacity: 0.1;
+            position: absolute;
+            bottom: 100%;
+            animation: scanline 10s linear infinite;
+            pointer-events: none;
+        }
+        @keyframes scanline {
+            0% { bottom: 100%; }
+            100% { bottom: -100px; }
+        }
+
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .legal-content h2 {
+            @apply text-2xl font-bold text-white mt-8 mb-4 font-mono;
+        }
+
+        .legal-content h3 {
+            @apply text-lg font-semibold text-slate-100 mt-6 mb-2;
+        }
+
+        .legal-content p {
+            @apply text-slate-300 mb-4 leading-relaxed;
+        }
+
+        .legal-content ul, .legal-content ol {
+            @apply text-slate-300 mb-4 ml-6 space-y-2;
+        }
+
+        .legal-content li {
+            @apply leading-relaxed;
+        }
+    </style>
+</head>
+<body class="bg-punch-bg text-slate-300 font-sans antialiased overflow-x-hidden relative">
+
+    <!-- Scanline Effect -->
+    <div class="fixed inset-0 pointer-events-none z-50 h-full w-full overflow-hidden">
+        <div class="scanline"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-40 top-0 border-b border-punch-border glass-panel">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="terminal" class="text-punch-accent h-6 w-6"></i>
+                    <a href="index.html" class="font-bold text-white text-xl tracking-tight hover:opacity-80 transition-opacity">punch<span class="text-punch-primary">Dev</span></a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8 font-mono text-sm">
+                        <a href="products.html" class="hover:text-punch-success transition-colors">./products</a>
+                        <a href="science.html" class="hover:text-punch-success transition-colors">./science</a>
+                        <a href="blog/index.html" class="hover:text-punch-success transition-colors">./blog</a>
+                        <a href="about.html" class="hover:text-punch-success transition-colors">./about</a>
+                    </div>
+                </div>
+                <div>
+                    <button class="bg-punch-primary/10 hover:bg-punch-primary/20 text-punch-primary border border-punch-primary/50 px-4 py-2 rounded font-mono text-sm transition-all hover:shadow-[0_0_15px_rgba(99,102,241,0.5)]">
+                        Init Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="relative pt-32 pb-20 sm:pt-40 sm:pb-24">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Breadcrumb -->
+            <div class="mb-8 flex items-center gap-2 text-sm text-slate-500 font-mono">
+                <a href="index.html" class="hover:text-punch-primary transition-colors">Home</a>
+                <span>/</span>
+                <span class="text-slate-400">Terms of Service</span>
+            </div>
+
+            <!-- Header -->
+            <div class="mb-12">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 font-mono">
+                    Terms of <span class="text-transparent bg-clip-text bg-gradient-to-r from-punch-primary to-punch-accent">Service</span>
+                </h1>
+                <p class="text-slate-400">Last updated: January 2026</p>
+            </div>
+
+            <!-- Content -->
+            <div class="legal-content prose prose-invert max-w-none">
+
+                <h2>Acceptance of Terms</h2>
+                <p>By accessing and using punchDev.com and purchasing our supplements, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.</p>
+
+                <h2>Use License</h2>
+                <p>Permission is granted to temporarily download one copy of the materials (information or software) on punchDev's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p>
+                <ul>
+                    <li>Modify or copy the materials</li>
+                    <li>Use the materials for any commercial purpose or for any public display</li>
+                    <li>Attempt to decompile or reverse engineer any software contained on punchDev's website</li>
+                    <li>Remove any copyright or other proprietary notations from the materials</li>
+                    <li>Transfer the materials to another person or "mirror" the materials on any other server</li>
+                </ul>
+
+                <h2>Disclaimer of Medical Advice</h2>
+                <p>punchDev supplements are not intended to diagnose, treat, cure, mitigate, or prevent any disease. Our products are dietary supplements designed to support wellness for developers and tech professionals.</p>
+                <p>The statements made about our products have not been evaluated by the Food and Drug Administration. punchDev products are not intended to diagnose, treat, cure, or prevent any disease.</p>
+                <p><strong>Always consult your physician before starting any supplement regimen.</strong> If you are pregnant, nursing, taking medications, or have a medical condition, consult your healthcare provider prior to using our products.</p>
+
+                <h2>FDA Disclaimer</h2>
+                <p>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary, and these statements reflect the views of punchDev only. We recommend consulting with a qualified healthcare professional before use, particularly if you have pre-existing medical conditions or are taking other medications.</p>
+
+                <h2>Intellectual Property Rights</h2>
+                <p>The materials on punchDev's website are proprietary and owned by or licensed to punchDev. This includes but is not limited to:</p>
+                <ul>
+                    <li>The punchDev brand name, logo, and product names (git push --force, localhost:3000, merge conflict, nightly build)</li>
+                    <li>All website content, design, and layout</li>
+                    <li>Product photography and marketing materials</li>
+                    <li>Text, graphics, and other original works</li>
+                </ul>
+                <p>Unauthorized reproduction, modification, or use of these materials without written permission is prohibited.</p>
+
+                <h2>Limitation of Liability</h2>
+                <p>In no event shall punchDev Labs or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on punchDev's website, even if punchDev or an authorized representative has been notified orally or in writing of the possibility of such damage.</p>
+                <p>Your use of punchDev products is at your own risk. punchDev is provided on an "as is" basis without warranties of any kind, express or implied, including but not limited to warranties of merchantability or fitness for a particular purpose.</p>
+
+                <h2>Product Quality and Safety</h2>
+                <p>punchDev supplements are manufactured to strict quality standards. However, we do not guarantee that all products will be free from defects or that use of our products will result in any particular health outcome. Results vary based on individual biology, lifestyle, and adherence to recommended dosing.</p>
+                <p>If you experience adverse reactions or believe a product is defective, contact support immediately. Report serious adverse events to the FDA MedWatch program.</p>
+
+                <h2>User Responsibilities</h2>
+                <p>You agree to:</p>
+                <ul>
+                    <li>Provide accurate information when placing orders</li>
+                    <li>Use products only as directed on the label</li>
+                    <li>Stop use if you experience adverse reactions</li>
+                    <li>Not attempt to circumvent payment or security measures</li>
+                    <li>Not resell or redistribute products without authorization</li>
+                </ul>
+
+                <h2>Dispute Resolution and Governing Law</h2>
+                <p>These terms and conditions are governed by and construed in accordance with the laws of the jurisdiction where punchDev Labs is incorporated, and you irrevocably submit to the exclusive jurisdiction of the courts located in that jurisdiction.</p>
+                <p>Any dispute arising out of or relating to these terms or your use of punchDev products shall be resolved through binding arbitration or small claims court where applicable, rather than in court, except where prohibited by law.</p>
+
+                <h2>Changes to Terms</h2>
+                <p>punchDev reserves the right to modify these terms at any time. Changes become effective when posted to the website. Your continued use of punchDev following any modification constitutes your acceptance of the new terms. We recommend reviewing this page periodically for updates.</p>
+
+                <h2>Termination</h2>
+                <p>punchDev may terminate or suspend your access to our website and products at any time, with or without cause, with or without notice, for any reason or no reason.</p>
+
+                <h2>Severability</h2>
+                <p>If any provision of these terms is found to be invalid or unenforceable, that provision shall be modified to the minimum extent necessary to make it valid, or if not possible, severed. The remaining provisions shall remain in full force and effect.</p>
+
+                <h2>Contact Us</h2>
+                <p>If you have questions about these terms, contact us at:</p>
+                <p class="font-mono">
+                    legal@punchdev.com<br>
+                    punchDev Labs<br>
+                    support.punchdev.com
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center gap-2 mb-4 md:mb-0">
+                <i data-lucide="terminal" class="text-slate-600 h-6 w-6"></i>
+                <span class="font-bold text-slate-500 text-xl tracking-tight">punch<span class="text-slate-600">Dev</span></span>
+            </div>
+
+            <div class="flex space-x-6 text-sm text-slate-500 font-mono">
+                <a href="terms.html" class="hover:text-punch-primary">Terms</a>
+                <a href="privacy.html" class="hover:text-punch-primary">Privacy</a>
+                <a href="shipping.html" class="hover:text-punch-primary">Shipping</a>
+                <a href="faq.html" class="hover:text-punch-primary">FAQ</a>
+            </div>
+
+            <div class="mt-4 md:mt-0 text-slate-600 text-sm">
+                &copy; 2026 punchDev Labs. All systems operational.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
